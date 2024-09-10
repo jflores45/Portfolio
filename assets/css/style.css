@@ -1,0 +1,214 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-size: x-large;
+    margin:0;
+    padding:0;
+}
+#nav-bar{
+    background-color: rgba(232, 232, 232, 0.4); 
+    position: fixed;
+    padding: 35px;
+    width: 100%;
+    right: 0px;
+    display: flex; /* Make the nav bar a flex container */
+    justify-content: space-between; /* Space between the left and right elements */
+    align-items: center; /* Aligns the items vertically in the center */
+    box-sizing: border-box; /* Include padding in width */
+
+}
+#name-title{
+    color: white;
+}
+ul {
+    margin:0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li {
+    border:black;
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+  #res-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  button {
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    font-family: 'Courier New', cursives;
+    border: 5px solid white;
+    color: white;
+    font-size: 25px;
+}
+
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover {
+    color: #615c5c; /* Slightly lighter color on hover */
+}
+#home{
+    height: 1000px;
+    /* background-color: #9e9898; */
+    /* background-image: url("../images/back2-img.jpg"); */
+    background-image: url("../images/holo-abstract-shape_1030945-177.avif");
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    /* border-color: red; */
+}
+
+/* ---------------------ABOUT ---------------------*/
+#about{
+    display: flex;
+    align-items: center;
+    height: 800px; /* Adjust height as needed */
+    /* background-color: rgb(229, 223, 223); */
+    /* background-color: rgb(161, 175, 215); */
+    background-image: linear-gradient(to right, rgb(146, 149, 204) , rgb(132, 133, 199),rgb(154, 141, 199),  rgb(174, 164, 211));
+    padding: 20px;
+}
+.self{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+   
+    box-shadow: 0 0 20px 10px rgb(186, 202, 217, 0.6);
+    margin: 50px;
+}
+/*--------------------- BACKGROUND -------------------------*/
+#background{
+    height: 800px;
+    padding: 60px;
+    /* background-color: #9e9898; */
+    background-image: linear-gradient(to right, rgb(146, 149, 204) , rgb(132, 133, 199),rgb(154, 141, 199),  rgb(174, 164, 211));
+    color:white;
+}
+.img-container {
+    width: 300px;
+    height: auto;
+    background-color: rgba(189, 209, 227, 0.3);
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.img-container img {
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Keep the aspect ratio */
+}
+
+/*--------------------- PROJECT -------------------------*/
+#project{
+    height: 1100px;
+    /* background-color: rgb(229, 223, 223); */
+    background-image: linear-gradient(to right, rgb(146, 149, 204) , rgb(132, 133, 199),rgb(154, 141, 199),  rgb(174, 164, 211));
+    padding: 60px;
+    color: white;
+}
+.grid-container {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* Set max width for images */
+    max-height: 800px; /* Set max height for images */
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+figcaption h2 {
+    font-size: 24px; /* Size of the overlay text */
+    margin: 0;
+    padding: 10px;
+}
+figure:hover figcaption {
+    opacity: 1; /* Show the overlay on hover */
+}
+figure:hover {
+    transform: translateY(-5px);
+}
+/* ---------------------CONTACT ---------------------*/
+#contact{
+    height: 400px;
+    padding: 40px;
+    /* background-color: #9e9898; */
+    background-image: linear-gradient(to right, rgb(116, 136, 201), rgb(120, 139, 200));
+    color:white;
+}
+#contact img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+
+}
+.typewriter{
+    display: flex;
+    justify-content: center;
+    padding-top: 15em; 
+}
+.typewriter h1{
+    color: #fff;
+    font-size: 40px;
+    /* font-family: 'Patrick Hand', cursive; */
+    /* font-family: 'Courier New', cursives; */
+    /* border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .20em; */
+    overflow: hidden;
+    /* animation-delay: 2s; */
+    /* animation:  */
+        /* animation pause */
+        /* typing 3.5s steps(30, end),
+        blinker 0.5s step-end infinite;
+        animation-iteration-count: infinite; */
+        /* animation-delay: 5s; */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    font-size: 20px;
+    position: fixed; /* Optional: sticks footer at the bottom of the page */
+    bottom: 0;
+    width:100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* typing */
+@keyframes typing{
+    from { width: 0 }
+    to { width: 18% }
+}
+
+@keyframes blinker{
+    from, to{border-color: transparent}
+    50% {border-color: white}
+}
