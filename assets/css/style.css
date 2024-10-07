@@ -18,6 +18,9 @@ body{
     box-sizing: border-box; /* Include padding in width */
 
 }
+.active {
+    color: black; /* Change color of the active nav item */
+}
 #name-title{
     color: white;
 }
@@ -51,19 +54,24 @@ li {
     font-size: 25px;
 }
 
-  a{
+#res-button:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)); /* Glow */
+    transform: scale(1.0);
+}
+
+a{
     text-decoration: none;
     color: #fff;
-  }
+}
 
-  a:hover {
+a:hover {
     color: #615c5c; /* Slightly lighter color on hover */
 }
 #home{
     height: 1000px;
     /* background-color: #9e9898; */
-    /* background-image: url("../images/back2-img.jpg"); */
-    background-image: url("../images/holo-abstract-shape_1030945-177.avif");
+    background-image: url("../images/back2-img.jpg");
+    /* background-image: url("../images/holo-abstract-shape_1030945-177.avif"); */
     background-size: cover;
     background-position: center;
     padding: 0;
@@ -71,14 +79,25 @@ li {
 }
 
 /* ---------------------ABOUT ---------------------*/
+
 #about{
     display: flex;
     align-items: center;
     height: 800px; /* Adjust height as needed */
-    /* background-color: rgb(229, 223, 223); */
+    background-color: rgb(229, 223, 223);
     /* background-color: rgb(161, 175, 215); */
-    background-image: linear-gradient(to right, rgb(146, 149, 204) , rgb(132, 133, 199),rgb(154, 141, 199),  rgb(174, 164, 211));
+    /* background-image: linear-gradient(to right, rgb(146, 149, 204) , rgb(132, 133, 199),rgb(154, 141, 199),  rgb(174, 164, 211)); */
     padding: 20px;
+    color: rgb(50, 50, 50);
+}
+#about a{
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+    /* color: black; */
+}
+#about a:hover {
+    color: #615c5c; 
 }
 .self{
     width: 400px;
@@ -86,40 +105,85 @@ li {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
-   
-    box-shadow: 0 0 20px 10px rgb(186, 202, 217, 0.6);
+    /* box-shadow: 0 0 20px 10px rgb(186, 202, 217, 0.6); */
+    box-shadow: 0 0 20px 10px rgb(255, 255, 255, 0.6); 
     margin: 50px;
 }
 /*--------------------- BACKGROUND -------------------------*/
-#background{
-    height: 800px;
+
+#background {
+    height: 800px; /* You can adjust this depending on your design */
     padding: 60px;
-    /* background-color: #9e9898; */
-    background-image: linear-gradient(to right, rgb(146, 149, 204) , rgb(132, 133, 199),rgb(154, 141, 199),  rgb(174, 164, 211));
-    color:white;
+    background-color: rgb(59, 94, 115);
+    color: white;
 }
+
+.container {
+    display: flex; /* Enable flexbox to arrange children */
+    justify-content: space-around; /* Space out the .img-container elements */
+    align-items: center; /* Align containers to the top */
+    flex-wrap: wrap; /* Wrap the containers to the next line if necessary */
+    width: 100%;
+    max-width: 1600px; /* Set a max width for the container */
+    margin-top: 100px; 
+}
+
 .img-container {
     width: 300px;
-    height: auto;
+    height: 400px;
     background-color: rgba(189, 209, 227, 0.3);
-    display: inline-block;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically inside each container */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
     padding: 20px;
     text-align: center;
-    
+    margin-bottom: 20px; 
 }
 
 .img-container img {
-    width: 200px; /* Adjust as needed */
-    height: auto; /* Keep the aspect ratio */
+    width: auto; /* Automatically adjust width */
+    height: 100px; /* Set a specific height */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+    object-fit: cover; /* Maintain aspect ratio while filling the area */
+    margin-bottom: 15px; /* Space between the image and the text */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.icon {
+    filter: invert(1) brightness(2); /* Makes black parts white */
+}
+
+.greentob {
+    filter: hue-rotate(180deg) brightness(3); /* Changes green to white */
+}
+
+.img-container:hover {
+    background-color: rgba(189, 209, 227, 0.6); 
+    transition: background-color 0.3s ease; 
 }
 
 /*--------------------- PROJECT -------------------------*/
 #project{
     height: 1100px;
-    /* background-color: rgb(229, 223, 223); */
-    background-image: linear-gradient(to right, rgb(146, 149, 204) , rgb(132, 133, 199),rgb(154, 141, 199),  rgb(174, 164, 211));
+    background-color: rgb(229, 223, 223);
+    /* background-image: linear-gradient(to right, rgb(146, 149, 204) , rgb(132, 133, 199),rgb(154, 141, 199),  rgb(174, 164, 211)); */
     padding: 60px;
-    color: white;
+    /* color: white;  */
+    color: rgb(50, 50, 50);
+}
+#project a{
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+    /* color: black; */
+}
+#project a:hover {
+    color: #615c5c; 
 }
 .grid-container {
     display: grid;
@@ -130,8 +194,8 @@ li {
 figure img {
     width: 100%;
     height: auto;
-    max-width: 800px; /* Set max width for images */
-    max-height: 800px; /* Set max height for images */
+    max-width: 500px; /* Set max width for images */
+    max-height: 500px; /* Set max height for images */
     object-fit: cover;
     display: block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -153,9 +217,11 @@ figure:hover {
 #contact{
     height: 400px;
     padding: 40px;
-    /* background-color: #9e9898; */
-    background-image: linear-gradient(to right, rgb(116, 136, 201), rgb(120, 139, 200));
+    background-color:rgb(1, 38, 55);
+    /* background-image: linear-gradient(to right, rgb(116, 136, 201), rgb(120, 139, 200)); */
     color:white;
+    /* display:flex; */
+    /* align-items: center; */
 }
 #contact img{
     width: 50px;
@@ -163,8 +229,21 @@ figure:hover {
     border-radius: 50%;
     object-fit: cover;
     display: inline-block;
-
 }
+.text-right{
+    display: flex;
+    gap: 15px;
+}
+
+.hoover-g {
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.hoover-g:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)); /* Glow effect */
+    transform: scale(1.05); /* Slightly scale up the icon */
+}
+
 .typewriter{
     display: flex;
     justify-content: center;
