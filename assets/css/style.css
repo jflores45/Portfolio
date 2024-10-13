@@ -76,6 +76,42 @@ a:hover {
     background-position: center;
     padding: 0;
     /* border-color: red; */
+    color: #fff;
+    /* font-family: 'Patrick Hand', cursive; */
+    font-family: 'Courier New', cursives;
+    text-align: center;
+}
+.typewriter{
+    display: flex;
+    justify-content: center;
+    padding-top: 15em; 
+}
+.typewriter h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Courier New', cursives;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .20em;
+    overflow: hidden;
+    animation-delay: 2s;
+    animation: typing 3.5s steps(30, end) 1, blinker 0.75s step-end infinite;
+}
+/* typing */
+@keyframes typing{
+    from { width: 0 }
+    to { width: 45% }
+}
+
+@keyframes blinker{
+    45% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: white;
+    }
 }
 
 /* ---------------------ABOUT ---------------------*/
@@ -112,10 +148,11 @@ a:hover {
 /*--------------------- BACKGROUND -------------------------*/
 
 #background {
-    height: 800px; /* You can adjust this depending on your design */
+    max-height: 2000px;
     padding: 60px;
     background-color: rgb(59, 94, 115);
     color: white;
+    padding-bottom: 80px;
 }
 
 .container {
@@ -169,18 +206,16 @@ ul {
 
 /*--------------------- PROJECT -------------------------*/
 #project{
-    height: 1100px;
+    max-height: 2000px;
     background-color: rgb(229, 223, 223);
     /* background-image: linear-gradient(to right, rgb(146, 149, 204) , rgb(132, 133, 199),rgb(154, 141, 199),  rgb(174, 164, 211)); */
     padding: 60px;
-    /* color: white;  */
     color: rgb(50, 50, 50);
 }
 #project a{
     text-decoration: none;
     color: rgb(50, 50, 50);
     font-weight: 600;
-    /* color: black; */
 }
 #project a:hover {
     color: #615c5c; 
@@ -192,10 +227,10 @@ ul {
 }
 
 figure img {
-    width: 100%;
-    height: auto;
-    max-width: 500px; /* Set max width for images */
-    max-height: 500px; /* Set max height for images */
+    width: 400px;
+    height: 450px;
+    max-width: 900px;
+    max-height: 950px;
     object-fit: cover;
     display: block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -215,13 +250,14 @@ figure:hover {
 }
 /* ---------------------CONTACT ---------------------*/
 #contact{
-    height: 400px;
+    height: 350px;
     padding: 40px;
     background-color:rgb(1, 38, 55);
-    /* background-image: linear-gradient(to right, rgb(116, 136, 201), rgb(120, 139, 200)); */
-    color:white;
-    /* display:flex; */
-    /* align-items: center; */
+    color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center; 
+    /* gap: 20px; */
 }
 #contact img{
     width: 50px;
@@ -230,42 +266,37 @@ figure:hover {
     object-fit: cover;
     display: inline-block;
 }
-.text-right{
+#text-left {
     display: flex;
-    gap: 15px;
+    flex-direction:column;
+    /* border: 2px solid red;  */
+    width: 25%; /* Set width to 60% of the container */ 
+    min-width: 20%;
+    max-width: 30%;
+    margin-top: -70px;
+    padding-left: 100px;
 }
-
-.hoover-g {
-    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+#text-left p {
+    font-size: 25px; 
+    margin: 10px;
 }
-
-.hoover-g:hover {
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)); /* Glow effect */
-    transform: scale(1.05); /* Slightly scale up the icon */
+.icon-container{
+    padding: 5px;
 }
-
-.typewriter{
+#text-right {
     display: flex;
-    justify-content: center;
-    padding-top: 15em; 
+    flex-direction: column;
+    /* border: 2px solid rgb(225, 10, 154); */
+    width: 70%; /* Set width to 30% of the container */
+    max-width: 70%; 
+    padding-right: 100px;
+    margin: 0;
+   
 }
-.typewriter h1{
-    color: #fff;
-    font-size: 40px;
-    /* font-family: 'Patrick Hand', cursive; */
-    /* font-family: 'Courier New', cursives; */
-    /* border-right: .15em solid white;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .20em; */
-    overflow: hidden;
-    /* animation-delay: 2s; */
-    /* animation:  */
-        /* animation pause */
-        /* typing 3.5s steps(30, end),
-        blinker 0.5s step-end infinite;
-        animation-iteration-count: infinite; */
-        /* animation-delay: 5s; */
+#text-right h3 {
+    margin: 0; /* Remove default margin */
+    margin-bottom: 10px; /* Adjust this value as needed */
+    margin-top: -70px;
 }
 
 footer {
@@ -280,14 +311,13 @@ footer {
     height: 50px;
     line-height: 50px;
 }
-
-/* typing */
-@keyframes typing{
-    from { width: 0 }
-    to { width: 18% }
+/* hoover glow icons */
+.hoover-g {
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
 }
 
-@keyframes blinker{
-    from, to{border-color: transparent}
-    50% {border-color: white}
+.hoover-g:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)); /* Glow effect */
+    transform: scale(1.05); /* Slightly scale up the icon */
 }
+
