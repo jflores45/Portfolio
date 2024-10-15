@@ -2,12 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project: Instagram Clone</title>
+    <style>
+        .container {
+            /* max-width: 800px; */
+            margin: 0 auto;
+            font-size: x-large;
+            background-color: rgb(229, 223, 223);
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+       
+    </style>
 </head>
 <body>
-    <h1> Instagram Clone </h1>
-    
+
+    <div class="container">
+        <h1>Instagram Clone Project</h1>
+        <img src="/assets/images/chain.png">
+        <!-- Project Overview -->
+        <div class="section">
+            <h2 class="section-title">Project Overview</h2>
+            <p>This project is a simplified clone of Instagram, allowing users to sign up, upload photos, follow other users, like posts, and leave comments. The goal was to replicate the core features of Instagram using modern web technologies.</p>
+        </div>
+
+        <!-- Motivation/Goal -->
+        <div class="section">
+            <h2 class="section-title">Motivation/Goal</h2>
+            <p>The project was inspired by the need to build a full-stack application with user authentication and CRUD operations, enhancing my skills in React and Flask. The goal was to practice creating scalable, interactive user interfaces and backends with REST APIs.</p>
+        </div>
+
+        <!-- Features -->
+        <div class="section">
+            <h2 class="section-title">Features</h2>
+            <ul>
+                <li>User authentication (signup, login).</li>
+                <li>Upload and display photos in a user feed.</li>
+                <li>Follow/unfollow users and interact with posts (like, comment).</li>
+                <li>Responsive design for both desktop and mobile.</li>
+            </ul>
+        </div>
+
+        <!-- Technical Stack -->
+        <div class="section">
+            <h2 class="section-title">Technical Stack</h2>
+            <p><strong>Front-end:</strong> React, HTML, CSS, JavaScript</p>
+            <p><strong>Back-end:</strong> Flask (Python), SQLAlchemy (Database)</p>
+            <p><strong>Database:</strong> MySQL</p>
+            <p><strong>APIs/Libraries:</strong> Axios, JWT (JSON Web Tokens) for authentication</p>
+        </div>
+
+        <!-- Architecture/Design -->
+        <div class="section">
+            <h2 class="section-title">Architecture/Design</h2>
+            <p>The project uses a component-based architecture with React for the front-end. The data flow is managed with React state, and data is fetched from the Flask backend using REST APIs. User data and post information are stored in MySQL, and user authentication is handled with JWT.</p>
+        </div>
+
+        <!-- Challenges & Solutions -->
+        <div class="section">
+            <h2 class="section-title">Challenges & Solutions</h2>
+            <p>One challenge was handling image uploads and displaying them efficiently. I used Cloudinary for image storage and retrieval, optimizing the file size and format to ensure quick loading times.</p>
+        </div>
+
+        <!-- Lessons Learned -->
+        <div class="section">
+            <h2 class="section-title">Lessons Learned</h2>
+            <p>From this project, I learned more about managing state in React applications and improved my understanding of RESTful APIs and user authentication. I also gained experience working with third-party storage solutions like Cloudinary.</p>
+        </div>
+
+        <!-- Future Improvements -->
+        <div class="section">
+            <h2 class="section-title">Future Improvements</h2>
+            <p>Future improvements include adding real-time notifications for user interactions (e.g., likes, follows) and optimizing the feed to handle a larger number of posts more efficiently.</p>
+        </div>
+
+        <!-- Demo or Screenshots -->
+        <div class="section screenshot">
+            <h2 class="section-title">Screenshots</h2>
+            <img src="/assets/images/insta-clone.jpeg" alt="Instagram Clone Screenshot">
+        </div>
+
+        <!-- Live Demo Link -->
+        <div class="section">
+            <h2 class="section-title">Live Demo</h2>
+            <a href="https://eecs485staff.github.io/p3-insta485-clientside/" target="_blank" class="link">View Live Demo</a>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="section">
+            <h2 class="section-title">Conclusion</h2>
+            <p>This project was an excellent opportunity to develop full-stack skills, and I’m proud of how it turned out. It strengthened my understanding of React, Flask, and creating user-centric web applications.</p>
+        </div>
+    </div>
+
 </body>
+
 </html>

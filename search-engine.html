@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project: Search Engine</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+     
+    </style>
 </head>
+
 <body>
-    <h1>Search Engine</h1>
+
+    <div class="container">
+        <h1>Search Engine Project</h1>
+        <img src="/assets/images/chain.png">
+
+        <!-- Project Overview -->
+        <div class="section">
+            <h2 class="section-title">Project Overview</h2>
+            <p>This project is a basic search engine that allows users to search for documents. It indexes content from a set of documents and provides relevant search results based on user queries. The project demonstrates the core functionalities of search engines, including indexing, querying, and ranking.</p>
+        </div>
+
+        <!-- Motivation/Goal -->
+        <div class="section">
+            <h2 class="section-title">Motivation/Goal</h2>
+            <p>The project was inspired by the need to understand how search engines work under the hood. The goal was to implement a simple search engine that processes user queries and retrieves relevant results effectively, enhancing my skills in data structures and algorithms.</p>
+        </div>
+
+        <!-- Features -->
+        <div class="section">
+            <h2 class="section-title">Features</h2>
+            <ul>
+                <li>Document indexing for efficient search.</li>
+                <li>Support for basic query functionalities.</li>
+                <li>Ranking results based on relevance.</li>
+                <li>User-friendly interface for easy navigation.</li>
+            </ul>
+        </div>
+
+        <!-- Technical Stack -->
+        <div class="section">
+            <h2 class="section-title">Technical Stack</h2>
+            <p><strong>Languages:</strong> Python, JavaScript</p>
+            <p><strong>Frameworks/Libraries:</strong> Flask (Backend), jQuery (Frontend)</p>
+            <p><strong>Database:</strong> SQLite</p>
+            <p><strong>APIs/Libraries:</strong> BeautifulSoup (for web scraping), NLTK (for natural language processing)</p>
+        </div>
+
+        <!-- Architecture/Design -->
+        <div class="section">
+            <h2 class="section-title">Architecture/Design</h2>
+            <p>The project utilizes a client-server architecture where the front-end, built with Flask, communicates with the backend to fetch search results. It processes queries and retrieves relevant documents from the SQLite database based on user input.</p>
+        </div>
+
+        <!-- Challenges & Solutions -->
+        <div class="section">
+            <h2 class="section-title">Challenges & Solutions</h2>
+            <p>A major challenge was ensuring that the search results were relevant to the user's query. I implemented tokenization and stemming using NLTK to improve the accuracy of the search results, which significantly enhanced user satisfaction.</p>
+        </div>
+
+        <!-- Lessons Learned -->
+        <div class="section">
+            <h2 class="section-title">Lessons Learned</h2>
+            <p>This project deepened my understanding of search algorithms and data structures. I also gained experience in using natural language processing techniques to analyze text and improve search relevancy.</p>
+        </div>
+
+        <!-- Future Improvements -->
+        <div class="section">
+            <h2 class="section-title">Future Improvements</h2>
+            <p>Future enhancements could include adding features like autocomplete suggestions, advanced filtering options, and a more sophisticated ranking algorithm using machine learning techniques.</p>
+        </div>
+
+        <!-- Demo or Screenshots -->
+        <div class="section screenshot">
+            <h2 class="section-title">Screenshots</h2>
+            <img src="/assets/images/search-engine-screenshot.jpeg" alt="Search Engine Screenshot">
+        </div>
+
+        <!-- Live Demo Link -->
+        <div class="section">
+            <h2 class="section-title">Live Demo</h2>
+            <a href="https://eecs485staff.github.io/p5-search-engine/" target="_blank" class="link">View Live Demo</a>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="section">
+            <h2 class="section-title">Conclusion</h2>
+            <p>This project was a valuable learning experience, enhancing my knowledge of search engines and full-stack development. I am proud of the end result and look forward to applying these concepts in future projects.</p>
+        </div>
+    </div>
+
 </body>
+
 </html>
