@@ -160,7 +160,7 @@ a:hover {
 
 .container {
     display: flex; /* Enable flexbox to arrange children */
-    justify-content: space-around; /* Space out the .img-container elements */
+    justify-content: space-between;
     align-items: center; /* Align containers to the top */
     flex-wrap: wrap; /* Wrap the containers to the next line if necessary */
     width: 100%;
