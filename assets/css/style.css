@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    font-size: x-large;
+    font-size: 20px;
     margin:0;
     padding:0;
 }
@@ -88,25 +88,25 @@ a:hover {
 }
 .typewriter h1{
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Patrick Hand', cursive;
     font-family: 'Courier New', cursives;
-    border-right: .15em solid white;
+    border-right: .10em solid white;
     white-space: nowrap;
     margin: 0 auto;
-    letter-spacing: .20em;
+    letter-spacing: .15em;
     overflow: hidden;
     animation-delay: 2s;
-    animation: typing 3.5s steps(30, end) 1, blinker 0.75s step-end infinite;
+    animation: typing 3.5s steps(30, end) 1, blinker 0.70s step-end infinite;
 }
 /* typing */
 @keyframes typing{
     from { width: 0 }
-    to { width: 45% }
+    to { width: 30% }
 }
 
 @keyframes blinker{
-    45% {
+    30% {
         border-color: transparent;
     }
     100% {
@@ -127,7 +127,7 @@ a:hover {
     color: rgb(50, 50, 50);
 }
 #center{
-    max-width: 1100px;
+    max-width: 900px;
 }
 #about a{
     text-decoration: none;
@@ -151,7 +151,7 @@ a:hover {
 /*--------------------- BACKGROUND -------------------------*/
 
 #background {
-    max-height: 2000px;
+    /* max-height: 2000px; */
     padding: 60px;
     background-color: rgb(59, 94, 115);
     color: white;
@@ -285,6 +285,7 @@ figure:hover {
 }
 .icon-container{
     padding: 5px;
+    padding-top: 10px;
 }
 #text-right {
     display: flex;
