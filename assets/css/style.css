@@ -159,18 +159,17 @@ a:hover {
 }
 
 .container {
-    display: flex; /* Enable flexbox to arrange children */
+    display: flex;
     justify-content: space-between;
-    align-items: center; /* Align containers to the top */
-    flex-wrap: wrap; /* Wrap the containers to the next line if necessary */
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    max-width: 2000px; /* Set a max width for the container */
-    margin-top: 80px; 
+    margin-top: 40px; 
 }
 
 .img-container {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     background-color: rgba(189, 209, 227, 0.3);
     display: flex;
     flex-direction: column; /* Stack elements vertically inside each container */
@@ -182,11 +181,11 @@ a:hover {
 }
 
 .img-container img {
-    width: auto; /* Automatically adjust width */
-    height: 100px; /* Set a specific height */
-    max-width: 100%; /* Ensure it doesn't overflow the container */
-    object-fit: cover; /* Maintain aspect ratio while filling the area */
-    margin-bottom: 15px; /* Space between the image and the text */
+    width: auto;
+    height: 100px;
+    max-width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 ul {
@@ -230,8 +229,8 @@ ul {
 }
 
 figure img {
-    width: 400px;
-    height: 450px;
+    width: 350px;
+    height: 400px;
     max-width: 900px;
     max-height: 950px;
     object-fit: cover;

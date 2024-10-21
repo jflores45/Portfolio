@@ -5,22 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project: Instagram Clone</title>
     <style>
-        .container {
-            /* max-width: 800px; */
-            margin: 0 auto;
-            font-size: x-large;
-            background-color: rgb(31, 30, 30);
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(24, 24, 24);
             color: rgb(231, 230, 230);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(31, 30, 30);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            background: linear-gradient(90deg, rgb(251, 182, 83) 0%, rgb(214, 71, 179) 50%, rgb(126, 125, 237) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 10px 0; /* Optional margin */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 20px 0 10px;
+        }
+        p, ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .link {
+            color: rgb(255, 204, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            margin: 0;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>Instagram Clone Project</h1>
-        <img src="assets/images/chain.png" height="60px" width="60px">
+        <img src="assets/images/chain.png" height="60px" width="60px" alt="Instagram Logo">
+
         <!-- Project Overview -->
         <div class="section">
             <h2 class="section-title">Project Overview</h2>
@@ -30,7 +73,16 @@
         <!-- Motivation/Goal -->
         <div class="section">
             <h2 class="section-title">Motivation/Goal</h2>
-            <p>The project was inspired by the need to build a full-stack application with user authentication and CRUD operations, enhancing my skills in React and Flask. The goal was to practice creating scalable, interactive user interfaces and backends with REST APIs.</p>
+            <p>The project was inspired by the need to build a full-stack application with user authentication and CRUD operations, enhancing my skills in Flask and modern web development.</p>
+        </div>
+
+        <!-- Technical Stack -->
+        <div class="section">
+            <h2 class="section-title">Technical Stack</h2>
+            <p><strong>Front-end:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Back-end:</strong> Flask (Python)</p>
+            <p><strong>Database:</strong> SQLite</p>
+            <p><strong>APIs/Libraries:</strong> Flask-SQLAlchemy for ORM, session-based authentication</p>
         </div>
 
         <!-- Features -->
@@ -41,46 +93,51 @@
                 <li>Upload and display photos in a user feed.</li>
                 <li>Follow/unfollow users and interact with posts (like, comment).</li>
                 <li>Responsive design for both desktop and mobile.</li>
+                <li>Infinite scrolling with pagination using <code>postid_lte</code>, <code>size</code>, and <code>page</code> query parameters for optimized data loading.</li>
             </ul>
-        </div>
-
-        <!-- Technical Stack -->
-        <div class="section">
-            <h2 class="section-title">Technical Stack</h2>
-            <p><strong>Front-end:</strong> React, HTML, CSS, JavaScript</p>
-            <p><strong>Back-end:</strong> Flask (Python), SQLAlchemy (Database)</p>
-            <p><strong>Database:</strong> MySQL</p>
-            <p><strong>APIs/Libraries:</strong> Axios, JWT (JSON Web Tokens) for authentication</p>
         </div>
 
         <!-- Architecture/Design -->
         <div class="section">
             <h2 class="section-title">Architecture/Design</h2>
-            <p>The project uses a component-based architecture with React for the front-end. The data flow is managed with React state, and data is fetched from the Flask backend using REST APIs. User data and post information are stored in MySQL, and user authentication is handled with JWT.</p>
+            <p>The project uses Flask for server-side operations and a REST API to handle communication between the front-end and back-end. Data is stored in SQLite, and user sessions are managed using Flask’s built-in session management to handle authentication.</p>
+            <p>The REST API supports pagination for the user feed. When fetching posts, the client can pass query parameters like <code>postid_lte</code>, <code>size</code>, and <code>page</code> to load a specific number of posts or continue scrolling from where the last posts were loaded.</p>
+        </div>
+
+        <!-- Pagination Mechanism -->
+        <div class="section">
+            <h2 class="section-title">Pagination</h2>
+            <p>To support infinite scrolling, the pagination system allows the client to request posts in chunks. The query parameters include:</p>
+            <ul>
+                <li><strong>postid_lte=N:</strong> Fetch posts with an ID less than or equal to N.</li>
+                <li><strong>size=N:</strong> Specify the number of posts to return per request.</li>
+                <li><strong>page=N:</strong> Request a specific page of results (useful for non-infinite scrolling scenarios).</li>
+            </ul>
         </div>
 
         <!-- Challenges & Solutions -->
         <div class="section">
             <h2 class="section-title">Challenges & Solutions</h2>
-            <p>One challenge was handling image uploads and displaying them efficiently. I used Cloudinary for image storage and retrieval, optimizing the file size and format to ensure quick loading times.</p>
+            <p>One challenge was ensuring user authentication was secure and efficient. Flask's session-based authentication simplified this process, ensuring only logged-in users can interact with protected routes.</p>
+            <p>Another challenge was optimizing the feed for large sets of data. Pagination using query parameters (<code>postid_lte</code>, <code>size</code>, and <code>page</code>) allows for efficient data retrieval and supports infinite scrolling for a seamless user experience.</p>
         </div>
 
         <!-- Lessons Learned -->
         <div class="section">
             <h2 class="section-title">Lessons Learned</h2>
-            <p>From this project, I learned more about managing state in React applications and improved my understanding of RESTful APIs and user authentication. I also gained experience working with third-party storage solutions like Cloudinary.</p>
+            <p>This project helped me deepen my understanding of RESTful APIs, user authentication with Flask, and integrating a front-end with a back-end for a full-stack web application. I also improved my database management skills using SQLAlchemy.</p>
         </div>
 
         <!-- Future Improvements -->
         <div class="section">
             <h2 class="section-title">Future Improvements</h2>
-            <p>Future improvements include adding real-time notifications for user interactions (e.g., likes, follows) and optimizing the feed to handle a larger number of posts more efficiently.</p>
+            <p>Future improvements include adding more user interaction features like real-time notifications for likes and follows, and implementing more efficient methods for handling larger data sets of posts.</p>
         </div>
 
-        <!-- Demo or Screenshots -->
+        <!-- Screenshots -->
         <div class="section screenshot">
             <h2 class="section-title">Screenshots</h2>
-            <img src="assets/images/insta-clone.jpeg" alt="Instagram Clone Screenshot" width="500px" height="500px">
+            <img src="assets/images/insta-clone.jpeg" alt="Instagram Clone Screenshot" width="500" height="500">
         </div>
 
         <!-- Live Demo Link -->
@@ -92,10 +149,8 @@
         <!-- Conclusion -->
         <div class="section">
             <h2 class="section-title">Conclusion</h2>
-            <p>This project was an excellent opportunity to develop full-stack skills, and I’m proud of how it turned out. It strengthened my understanding of React, Flask, and creating user-centric web applications.</p>
+            <p>This project was an excellent opportunity to develop full-stack skills, and I’m proud of how it turned out. It strengthened my understanding of Flask, session management, and creating user-centric web applications.</p>
         </div>
     </div>
-
 </body>
-
 </html>
