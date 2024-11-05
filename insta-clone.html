@@ -12,6 +12,21 @@
             margin: 0;
             padding: 0;
         }
+        .header {
+            display: flex;
+            align-items: center; /* Vertically center the items */
+            justify-content: center; /* Center them horizontally, adjust as needed */
+            margin-bottom: 20px; /* Space below the header */
+        }
+
+        .header img {
+            margin-left: 10px; /* Space between title and image */
+            filter: brightness(0) invert(1);
+            height: 40px;
+            width: 40px;
+            transform: translateY(10px);
+        }
+
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -61,9 +76,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Instagram Clone Project</h1>
-        <img src="assets/images/chain.png" height="60px" width="60px" alt="Instagram Logo">
-
+        <div class="header">
+            <h1>Instagram Clone Project</h1>
+            <img src="assets/images/chain.png" height="60px" width="60px" alt="Instagram Logo">
+        </div>
+        
         <!-- Project Overview -->
         <div class="section">
             <h2 class="section-title">Project Overview</h2>
@@ -134,16 +151,21 @@
             <p>Future improvements include adding more user interaction features like real-time notifications for likes and follows, and implementing more efficient methods for handling larger data sets of posts.</p>
         </div>
 
-        <!-- Screenshots -->
-        <div class="section screenshot">
-            <h2 class="section-title">Screenshots</h2>
-            <img src="assets/images/insta-clone.jpeg" alt="Instagram Clone Screenshot" width="500" height="500">
-        </div>
-
         <!-- Live Demo Link -->
         <div class="section">
             <h2 class="section-title">Live Demo</h2>
-            <a href="https://eecs485staff.github.io/p3-insta485-clientside/" target="_blank" class="link">View Live Demo</a>
+            <div class="video-container" style="padding-top: 30px; text-align: center;">
+                <iframe 
+                    width="600" 
+                    height="350" 
+                    src="https://www.youtube.com/embed/AU5YMHU-s7U" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
         </div>
 
         <!-- Conclusion -->
