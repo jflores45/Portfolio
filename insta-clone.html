@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <title>Project: Instagram Clone</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto Mono';
+            /* font-family: 'Nanum Myeongjo'; */
             background-color: rgb(24, 24, 24);
+            font-size: large;
             color: rgb(231, 230, 230);
             margin: 0;
             padding: 0;
@@ -28,7 +31,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
             background-color: rgb(31, 30, 30);
@@ -40,11 +43,13 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin: 10px 0; /* Optional margin */
+            /* font-family: 'Nanum Myeongjo'; */
         }
 
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
+            /* font-family: 'Nanum Myeongjo'; */
         }
         h2 {
             font-size: 1.8em;
@@ -78,7 +83,9 @@
     <div class="container">
         <div class="header">
             <h1>Instagram Clone Project</h1>
-            <img src="assets/images/chain.png" height="60px" width="60px" alt="Instagram Logo">
+            <a href ="error.html">
+                <img src="assets/images/chain.png" height="60px" width="60px" alt="Chain">
+            </a>
         </div>
         
         <!-- Project Overview -->
@@ -96,7 +103,7 @@
         <!-- Technical Stack -->
         <div class="section">
             <h2 class="section-title">Technical Stack</h2>
-            <p><strong>Front-end:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Front-end:</strong> HTML, CSS, JavaScript, React</p>
             <p><strong>Back-end:</strong> Flask (Python)</p>
             <p><strong>Database:</strong> SQLite</p>
             <p><strong>APIs/Libraries:</strong> Flask-SQLAlchemy for ORM, session-based authentication</p>

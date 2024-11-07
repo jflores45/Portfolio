@@ -4,46 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <title>Project: Search Engine</title>
     <style>
+        body {
+            background: #1F1E1E;
+            font-family: 'Roboto Mono';
+            font-size: large;
+        }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
-            background: #fff;
+            background: #383838;
             padding: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-     
+        .header {
+            display: flex;           
+            justify-content: center; /* Centers the content horizontally */
+            align-items: center;     /* Centers the content vertically */
+            margin-top: 20px;
+        }
+        .header img {
+            margin-left: 10px; /* Space between title and image */
+            filter: brightness(0) invert(1);
+            height: 40px;
+            width: 40px;
+        }
+        h1 {
+            color: #FF60AC;
+            text-align: center;
+        }
+        p {
+            color: white;
+            line-height: 1.8;
+        }
+        .section-title {
+            color: #e1006d;
+        }
+        ul li {
+            color: #E72A90;
+            line-height: 1.5;
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container">
+       
         <h1>Search Engine Project</h1>
-        <img src="assets/images/chain.png" height="60px" width="60px">
-
+        <div class="header">
+            <div><h1>ask485?</h1></div>
+            <div>
+                <a href ="error.html">
+                    <img src="assets/images/chain.png" height="60px" width="60px" alt="Chain">
+                </a>
+            </div>
+        </div>
         <!-- Project Overview -->
         <div class="section">
             <h2 class="section-title">Project Overview</h2>
-            <p>This project is a basic search engine that allows users to search for documents. It indexes content from a set of documents and provides relevant search results based on user queries. The project demonstrates the core functionalities of search engines, including indexing, querying, and ranking.</p>
+            <p>This project is a basic search engine that indexes content from a set of documents and retrieves relevant search results based on user queries. It demonstrates essential search engine functions such as indexing, querying, ranking, and the importance of document relevance, which is computed using the PageRank algorithm.</p>
         </div>
 
         <!-- Motivation/Goal -->
         <div class="section">
             <h2 class="section-title">Motivation/Goal</h2>
-            <p>The project was inspired by the need to understand how search engines work under the hood. The goal was to implement a simple search engine that processes user queries and retrieves relevant results effectively, enhancing my skills in data structures and algorithms.</p>
+            <p>The goal of this project was to build a functional search engine to gain insight into the workings of search algorithms, especially focusing on ranking results effectively. This project emphasizes not just finding documents but ranking them by their importance, which is where the PageRank algorithm plays a crucial role.</p>
         </div>
 
         <!-- Features -->
         <div class="section">
             <h2 class="section-title">Features</h2>
             <ul>
-                <li>Document indexing for efficient search.</li>
-                <li>Support for basic query functionalities.</li>
-                <li>Ranking results based on relevance.</li>
-                <li>User-friendly interface for easy navigation.</li>
+                <li>Efficient document indexing for faster search responses.</li>
+                <li>Basic keyword search that processes user input to find matches in documents.</li>
+                <li>PageRank-based ranking of search results, ensuring documents with higher authority are returned first.</li>
+                <li>Clean and user-friendly interface to interact with the search engine.</li>
             </ul>
         </div>
 
@@ -52,38 +91,47 @@
             <h2 class="section-title">Technical Stack</h2>
             <p><strong>Languages:</strong> Python, JavaScript</p>
             <p><strong>Frameworks/Libraries:</strong> Flask (Backend), jQuery (Frontend)</p>
-            <p><strong>Database:</strong> SQLite</p>
-            <p><strong>APIs/Libraries:</strong> BeautifulSoup (for web scraping), NLTK (for natural language processing)</p>
+            <p><strong>Database:</strong> SQLite (to store indexed documents and metadata)</p>
+            <p><strong>APIs/Libraries:</strong> BeautifulSoup (for web scraping), NLTK (for text processing and natural language features)</p>
         </div>
 
         <!-- Architecture/Design -->
         <div class="section">
             <h2 class="section-title">Architecture/Design</h2>
-            <p>The project utilizes a client-server architecture where the front-end, built with Flask, communicates with the backend to fetch search results. It processes queries and retrieves relevant documents from the SQLite database based on user input.</p>
+            <p>The search engine system is built around a client-server architecture, consisting of two primary components:</p>
+            <ul>
+                <li><strong>Indexing Server:</strong> This component processes documents, breaking them down into searchable keywords, and stores the information in an SQLite database. The index allows fast lookups for words or phrases.</li>
+                <li><strong>Search Server:</strong> Handles incoming search queries from the user, retrieves relevant documents from the index, ranks them using the PageRank algorithm, and returns the results to the user in order of relevance.</li>
+            </ul>
+            <p><strong>How PageRank Works:</strong> The PageRank algorithm is a fundamental algorithm used by Google to rank websites. PageRank works by evaluating the number and quality of links pointing to a document (or web page). A page with more high-quality backlinks is considered more important, and as such, it is ranked higher in the search results.</p>
+            <p>In the context of this search engine, each document is considered a "page," and the links are the connections between the documents. The more backlinks a document has from other high-ranking documents, the higher its PageRank score. This method of ranking results ensures that the most authoritative and relevant documents are displayed at the top.</p>
+            <p>In simple terms, if Document A links to Document B, Document B is considered more important due to the "vote" from Document A. If Document A is linked by many other documents, its importance increases, thus affecting the ranking of Document B when it's linked to it.</p>
         </div>
 
         <!-- Challenges & Solutions -->
         <div class="section">
             <h2 class="section-title">Challenges & Solutions</h2>
-            <p>A major challenge was ensuring that the search results were relevant to the user's query. I implemented tokenization and stemming using NLTK to improve the accuracy of the search results, which significantly enhanced user satisfaction.</p>
+            <p>One of the major challenges was ensuring the accuracy of search results. Initially, the search was based purely on keyword matching, which led to irrelevant results. To address this, I implemented tokenization and stemming techniques using the NLTK library. These methods broke down words into their root form, improving search accuracy by matching variations of words.</p>
+            <p>The most complex part of the project was implementing the PageRank algorithm. I needed to adapt it to suit the document structure and ensure that links between documents correctly impacted the ranking. This was achieved by calculating the number of incoming and outgoing links for each document, as well as adjusting the rank based on the quality of the linking documents.</p>
         </div>
 
         <!-- Lessons Learned -->
         <div class="section">
             <h2 class="section-title">Lessons Learned</h2>
-            <p>This project deepened my understanding of search algorithms and data structures. I also gained experience in using natural language processing techniques to analyze text and improve search relevancy.</p>
+            <p>This project significantly enhanced my understanding of how large-scale search engines like Google rank pages. I learned how to apply graph theory (the concept of backlinks as links between nodes in a graph) and how a ranking algorithm like PageRank can be applied to real-world problems.</p>
+            <p>Additionally, I gained valuable experience working with databases, implementing natural language processing for query processing, and managing a full-stack architecture involving both frontend and backend components.</p>
         </div>
 
         <!-- Future Improvements -->
         <div class="section">
             <h2 class="section-title">Future Improvements</h2>
-            <p>Future enhancements could include adding features like autocomplete suggestions, advanced filtering options, and a more sophisticated ranking algorithm using machine learning techniques.</p>
-        </div>
-
-        <!-- Demo or Screenshots -->
-        <div class="section screenshot">
-            <h2 class="section-title">Screenshots</h2>
-            <img src="assets/images/search-engine-screenshot.jpeg" alt="Search Engine Screenshot" width="500px" height="500px">
+            <p>In the future, I plan to enhance the search engine by:</p>
+            <ul>
+                <li>Integrating machine learning techniques for more accurate ranking beyond PageRank, like learning to rank models.</li>
+                <li>Introducing personalized search based on user preferences and browsing history.</li>
+                <li>Adding additional search filters like date range, document type, and popularity metrics.</li>
+                <li>Improving the PageRank algorithm by considering more features of links, such as link trustworthiness or the relevance of the linking page's content.</li>
+            </ul>
         </div>
 
         <!-- Live Demo Link -->
@@ -95,7 +143,7 @@
         <!-- Conclusion -->
         <div class="section">
             <h2 class="section-title">Conclusion</h2>
-            <p>This project was a valuable learning experience, enhancing my knowledge of search engines and full-stack development. I am proud of the end result and look forward to applying these concepts in future projects.</p>
+            <p>This project was an important step in understanding the core principles behind search engines. I successfully implemented document indexing, built a ranking system with PageRank, and addressed challenges in processing natural language for search queries. I’m excited to apply these concepts in more advanced projects in the future.</p>
         </div>
     </div>
 
