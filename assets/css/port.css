@@ -1,0 +1,36 @@
+body{
+    /* background-image: linear-gradient(180deg, rgba(224, 236, 251, 0.6), rgba(181, 196, 215, 0.6), rgba(134, 160, 192, 0.6), rgba(117, 145, 179, 0.8)); */
+}
+.grid-container {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+}
+
+figure img {
+    width: 350px;
+    height: 400px;
+    max-width: 900px;
+    max-height: 950px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+a{
+    text-decoration: none;
+}
+figcaption h2 {
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+    color: rgb(11, 11, 11);
+}
+/* figure:hover figcaption {
+    opacity: 1; 
+}
+figure:hover {
+    transform: translateY(-5px);
+} */

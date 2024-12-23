@@ -197,8 +197,6 @@ a:hover {
     box-shadow: 0 4px 10px rgba(26, 65, 109, 0.8);
     /* box-shadow: 0 8px rgb(0, 0, 0); */
 
-    
-
 }
 .header-shift{
     padding-top: 40px;
@@ -265,14 +263,14 @@ ul {
     border-bottom: 2px solid rgba(96, 115, 161, 0.6);
     box-shadow: 0 4px 10px rgba(26, 65, 109, 0.8);
 }
-#project a{
+/* #project a{
     text-decoration: none;
     color: rgb(50, 50, 50);
     font-weight: 600;
 }
 #project a:hover {
     color: #615c5c; 
-}
+} */
 .grid-container {
     display: grid;
     margin: 20px;
@@ -302,6 +300,10 @@ figure:hover figcaption {
 }
 figure:hover {
     transform: translateY(-5px);
+}
+#more{
+    float:right;
+    color:#fff;
 }
 /* ---------------------CONTACT ---------------------*/
 #contact{
