@@ -118,42 +118,35 @@ a:hover {
 
 #about{
     display: flex;
-    align-items: center;
-    height: 600px; /* Adjust height as needed */
+    align-items: flex-start;
+    min-height: 620px;
+    max-height: 1400px;
     background-color: rgb(229, 223, 223, 0.4);
-    
-    /* background-image: linear-gradient(180deg, rgb(236, 147, 133, 0.3), rgb(200, 131, 137, 0.8), rgb(224, 153, 161, 0.8), rgb(138, 106, 117, 0.3)); */
-    
-    /* background-image: linear-gradient(180deg, rgb(138, 106, 117, 0.8), rgb(200, 131, 137, 0.8), rgb(224, 153, 161, 0.8), rgba(146, 105, 117, 0.6)); */
-
-    /* background-image: linear-gradient(180deg, rgb(138, 106, 117, 0.8), rgba(117, 145, 179, 0.8), rgb(112, 142, 179, 0.8), rgb(138, 106, 117, 0.5)); */
-    /* padding: 20px; */
-    /* color: rgb(50, 50, 50); */
-
     border-bottom: 2px solid rgba(134, 50, 50, 0.6);
     box-shadow: 0 4px 10px rgba(182, 29, 29, 0.6);
-    
+    flex-wrap: wrap;
+    /* padding: 20px; */
 }
 #left{
     padding-left: 100px;
-    
-    /* background-color: rgb(200, 131, 137); */
-    height: 600px;
-    width: 600px;
-    /* padding: 20px; */
+    padding-top: 50px;
+    width: 50%;
+    box-sizing: border-box;
+    /* width: 600px; */
 }
 #right{
-    height: 520px;
-    width: 500px;
+    min-height: 600px;
+    height: auto;
+    width: 50%;
     background-image: linear-gradient(180deg, rgba(117, 145, 179, 0.8), rgb(112, 142, 179, 0.8), rgb(138, 106, 117, 0.5));
     color: #fff;
-    /* padding: 100px; */
     padding: 80px 120px;
+    padding-bottom: 140px; 
     line-height: 1.5;
-    transform: translateY(-40px);
-    /* transform: translateX(90px); */
-   
+    /* transform: translateY(-40px); */
+    box-sizing: border-box;
 }
+
 #about-shift{
     transform: translateY(50px);
 }
@@ -161,11 +154,8 @@ a:hover {
     text-decoration: none;
     color: rgb(50, 50, 50);
     font-weight: 600;
-    /* color: black; */
 }
-/* #about a:hover {
-    color: #615c5c; 
-} */
+
 .self{
     width: 400px;
     height: 400px;
@@ -174,9 +164,19 @@ a:hover {
     margin-top: 100px;
     margin-left: 60px;
 
-    /* box-shadow: 0 0 20px 10px rgb(186, 202, 217, 0.6); */
+    box-shadow: 0 0 20px 10px rgb(186, 202, 217);
     /* box-shadow: 0 0 20px 10px rgb(255, 255, 255, 0.8);  */
     /* margin: 50px; */
+}
+@media (max-width: 768px) {
+    #left, #right {
+        width: 100%; /* Full width on small screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    #right {
+        padding: 40px 60px; /* Adjust padding for smaller screens */
+    }
 }
 /*--------------------- BACKGROUND -------------------------*/
 
