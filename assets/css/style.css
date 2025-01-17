@@ -164,17 +164,20 @@ a:hover {
     margin-top: 100px;
     margin-left: 60px;
 
-    box-shadow: 0 0 20px 10px rgb(186, 202, 217);
-    /* box-shadow: 0 0 20px 10px rgb(255, 255, 255, 0.8);  */
-    /* margin: 50px; */
+    /* box-shadow: 0 0 20px 10px rgb(186, 202, 217); */
 }
 @media (max-width: 768px) {
-    #left, #right {
-        width: 100%; /* Full width on small screens */
-        padding: 20px; /* Adjust padding */
+    #about{
+        background-image: linear-gradient(180deg,  rgb(112, 142, 179), rgba(117, 145, 179));
+    }
+    #left{
+        width: auto; /* Full width on small screens */
+        /* padding: 20px; Adjust padding */
+        /* background-image: linear-gradient(180deg,  rgb(112, 142, 179, 0.2), rgba(117, 145, 179, 0.8)); */
     }
 
     #right {
+        width: auto;
         padding: 40px 60px; /* Adjust padding for smaller screens */
     }
 }
@@ -182,7 +185,7 @@ a:hover {
 
 #background {
     min-height: 600px;
-    max-height: 1400px;
+    max-height: 1800px;
 
     padding: 60px;
     /* background-color: rgb(59, 94, 115); */
@@ -308,6 +311,7 @@ figure:hover {
 /* ---------------------CONTACT ---------------------*/
 #contact{
     height: 300px;
+    max-height: 500px;
     padding: 40px;
     background-image: linear-gradient(180deg, rgba(71, 73, 110, 0.8), rgb(47, 49, 60));
     /* background-color:rgb(115, 116, 137); */
