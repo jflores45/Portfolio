@@ -87,6 +87,7 @@ a:hover {
 .typewriter h1{
     color: #fff;
     font-size: 40px;
+    font-weight: 600;
     /* font-family: 'Patrick Hand', cursive; */
     font-family: 'Courier New', cursives;
     border-right: .10em solid white;
@@ -212,8 +213,9 @@ a:hover {
 h1, h2, h3{
     font-family: 'Courier New', cursives;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
 }
+
 .header-shift{
     padding-top: 40px;
 }
