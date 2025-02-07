@@ -4,17 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>Project: Search Engine</title>
     <style>
         body {
             /* background: #1F1E1E; */
+          
+            font-family: "Outfit", serif;
+            font-style: normal;
+            font-optical-sizing: auto;
+            font-weight: 40;
             background: #2d2c2c;
-            font-family: 'Roboto Mono';
             font-size: large;
+            color: rgb(231, 230, 230);
+            margin: 0;
+            padding: 0;
         }
+        
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             background: #313030;
             padding: 40px;
@@ -33,11 +43,21 @@
             height: 40px;
             width: 40px;
         }
+        h1, h2{
+            font-family: 'Courier New', cursives;
+            font-weight: 500;
+        }
         h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
             color: #FF60AC;
             text-align: center;
         }
-        p {
+        h2{
+            font-size: 1.8em;
+            margin: 20px 0 10px;
+        }
+        p, ul{
             color: white;
             line-height: 1.8;
         }
@@ -45,7 +65,7 @@
             color: #e1006d;
         }
         ul li {
-            color: #f54ea7;
+            /* color: #f54ea7; */
             line-height: 1.8;
         }
     </style>
