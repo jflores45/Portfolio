@@ -113,9 +113,9 @@
             <p><strong>Front-end:</strong> HTML, CSS, JavaScript, React</p>
             <p><strong>Back-end:</strong> Flask (Python)</p>
             <p><strong>Database:</strong> SQLite</p>
-            <p><strong>APIs/Libraries:</strong> Flask-SQLAlchemy for ORM, session-based authentication</p>
+            <p><strong>APIs/Libraries:</strong> Flask for session-based authentication, Jinja for template rendering</p>
         </div>
-
+        
         <!-- Features -->
         <div class="section">
             <h2 class="section-title">Features</h2>
@@ -131,9 +131,9 @@
         <!-- Architecture/Design -->
         <div class="section">
             <h2 class="section-title">Architecture/Design</h2>
-            <p>The project uses Flask for server-side operations and a REST API to handle communication between the front-end and back-end. Data is stored in SQLite, and user sessions are managed using Flask’s built-in session management to handle authentication.</p>
-            <p>The REST API supports pagination for the user feed. When fetching posts, the client can pass query parameters like <code>postid_lte</code>, <code>size</code>, and <code>page</code> to load a specific number of posts or continue scrolling from where the last posts were loaded.</p>
-        </div>
+            <p>The project combines Flask for server-side operations with Jinja templating to render the Explore, User, and Account pages, while React handles dynamic content on the Feed and single post pages. Communication between the front-end and back-end is facilitated through a REST API, which supports pagination for the user feed.</p>
+            <p>Data is stored in SQLite, and user sessions are managed using Flask’s session management for authentication. The REST API allows clients to pass query parameters like <code>postid_lte</code>, <code>size</code>, and <code>page</code> to fetch posts and enable continuous scrolling, loading posts dynamically as needed.</p>
+        </div>        
 
         <!-- Pagination Mechanism -->
         <div class="section">
@@ -149,21 +149,35 @@
         <!-- Challenges & Solutions -->
         <div class="section">
             <h2 class="section-title">Challenges & Solutions</h2>
-            <p>One challenge was ensuring user authentication was secure and efficient. Flask's session-based authentication simplified this process, ensuring only logged-in users can interact with protected routes.</p>
-            <p>Another challenge was optimizing the feed for large sets of data. Pagination using query parameters (<code>postid_lte</code>, <code>size</code>, and <code>page</code>) allows for efficient data retrieval and supports infinite scrolling for a seamless user experience.</p>
+            <p>One challenge was ensuring user authentication was secure and efficient. Flask's session-based authentication simplified this process, ensuring only logged-in users could interact with protected routes.</p>
+            <p>Another challenge was optimizing the feed for large datasets. Pagination was implemented using a React library, but we encountered issues like duplicate posts in the first 10 pages and inconsistent post loading between requests. These issues occurred due to improper handling of the <code>postid_lte</code> parameter. To resolve this, we refined how query parameters were managed to ensure correct data retrieval across multiple requests.</p>
+            <p>This experience reinforced the importance of scalable data handling in large applications. While a simpler JavaScript scrolling window could have been used, it would have required loading all data at once, making it inefficient for handling large-scale datasets.</p>
         </div>
-
-        <!-- Lessons Learned -->
-        <div class="section">
+        
+         <!-- Lessons Learned -->
+         <div class="section">
             <h2 class="section-title">Lessons Learned</h2>
-            <p>This project helped me deepen my understanding of RESTful APIs, user authentication with Flask, and integrating a front-end with a back-end for a full-stack web application. I also improved my database management skills using SQLAlchemy.</p>
+            <p>This project deepened my understanding of efficient data handling, particularly pagination and its role in scalability. I strengthened my skills in integrating RESTful APIs, session-based authentication with Flask, and managing dynamic front-end data with React. Debugging pagination issues also gave me valuable insight into how large-scale applications optimize content delivery for seamless user experiences.</p>
         </div>
-
+        
         <!-- Future Improvements -->
         <div class="section">
             <h2 class="section-title">Future Improvements</h2>
-            <p>Future improvements include adding more user interaction features like real-time notifications for likes and follows, and implementing more efficient methods for handling larger data sets of posts.</p>
-        </div>
+            <ul>
+                <li>
+                    <p><strong>Transition to Full Client-Side Dynamic Pages:</strong></p>
+                    <p>Currently, the app uses React for the Feed and individual posts, while Flask handles the Explore, User, and Account pages. Moving forward, I plan to refactor the entire app to be fully client-side by transitioning all pages to React. This shift will enable a seamless, single-page experience, where content is dynamically loaded on the client-side, improving performance and providing a smoother user experience.</p>
+                </li>
+                <li>
+                    <p><strong>Stories Feature:</strong></p>
+                    <p>Add a Stories feature, allowing users to upload and view temporary content that disappears after 24 hours, similar to Instagram’s Stories.</p>
+                </li>
+                <li>
+                    <p><strong>Videos on the FYP:</strong></p>
+                    <p>Expand the For You Page (FYP) to include video posts, enabling users to upload and view videos alongside images, creating a richer feed experience.</p>
+                </li>
+            </ul>
+        </div>        
 
         <!-- Live Demo Link -->
         <div class="section">
@@ -185,8 +199,10 @@
         <!-- Conclusion -->
         <div class="section">
             <h2 class="section-title">Conclusion</h2>
-            <p>This project was an excellent opportunity to develop full-stack skills, and I’m proud of how it turned out. It strengthened my understanding of Flask, session management, and creating user-centric web applications.</p>
-        </div>
+            <p>This project was an excellent learning experience that allowed me to develop and refine my full-stack skills. I gained valuable insights into Flask, session management, and creating user-centric web applications. I’m proud of the progress made, especially in integrating front-end React with back-end Flask.</p>
+            <p>However, I recognize that there are still areas for improvement. For instance, the current app still relies on a hybrid architecture, combining client-side React with server-side Flask for certain pages. Moving forward, I plan to refactor the entire app to be fully client-side, which will help optimize performance and provide a smoother experience for users. Additionally, further improvements can be made to the feed’s scalability, especially when handling large datasets.</p>
+            <p>Despite these areas of improvement, I’m excited about the progress I’ve made and the potential for future updates. This project has given me a solid foundation, and I look forward to building on it.</p>
+        </div>        
     </div>
 </body>
 </html>
