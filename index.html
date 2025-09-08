@@ -3,48 +3,80 @@
 
 <head>
     <meta charset="UTF-8"/>
-    <!-- check -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport"   content="width=device-width, initial-scale=1.0"> 
+   
     <title> Jahaira Flores </title>
-    <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <script src="assets/js/main.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <header>
-        <div id="home">
-            <div id="nav-bar">
-                <div id="name-title"> Jahaira Flores. </div>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#background">Background</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        
-            <div class="typewriter"> <h1>Hi, I'm Jahaira</h1></div>
-             <!-- <p> A new graduate eager to create, learn, and grow. </p> -->
-             <p>Driven by curiosity, I’m eager to create, learn, and grow.</p>
-        
-            <div id="res-button"> 
-                <a href="resume/SWE - Resume.pdf"><button>Resume</button></a>
-                <!-- <a href="resume.html"><button>Resume</button></a> -->
-                <!-- <a href="path/to/yourfile.pdf" target="_blank">Download PDF</a> -->
+    <div class="inner">
+            <header>
+                <div id="home">
+                    <div class="circle"></div>
 
-            </div>
-            
-        </div>
-    </header>
+                    <div id="nav-bar">
+                        <div id="name-title"> Jahaira Flores. </div>
+                        <div class="nav-right">
+                            <ul> 
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#background">Background</a></li>
+                                <li><a href="#project">Project</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                            <div id="mode">
+                                <img id="theme-icon" src="assets/images/sun_logo.png" alt="dark mode"/>
+                            </div>
+                        </div>
+                    </div>
 
-    <div id="about">
-        <div id="left">
-            <img class="self" alt="headshot" src="assets/images/headshot1.jpg">
-        </div>
-        <div id="right">
-            <div id="about-shift">
+                    <div id="container">
+                        <div class="left"> 
+                            <div class="title"><h1>Hello, I'm Jahaira Flores</h1></div>
+                            <!--                            
+                            <div class="console-container">
+                                <span id="text"></span>
+                                <div class="console-underscore" id="console">&#95;</div>
+                            </div> -->
+                            <!-- <h1>Hello, I'm jahaira</h1> -->
+                            <!-- <div class="typewriter"><p>Driven by curiosity, I’m eager to create, learn, and grow.</p></div> -->
+                            
+                            <p>I'm a passionate <span id="terminal"></span></p>
+
+                            <div id="res-button"> 
+                                <a href="resume/SWE - Resume.pdf"><button>RESUME</button></a>
+                            </div>
+
+                            <div class="contacts">
+                                <div class="contacts-container">
+                                    <a href="https://github.com/jflores45?tab=overview&from=2024-08-01&to=2024-08-23"><img src="assets/images/github-color.svg" alt="GitHub logo" class="hoover-g"></a>
+                                    
+                                    <a href="https://www.linkedin.com/in/flores-jahaira/?trk=opento_sprofile_details"><img src="assets/images/linkedin-icon-logo-svg-vector.svg" alt="LinkedIn logo" class="hoover-g"></a>
+                                
+                                    <a href="https://mail.google.com/mail/u/0/jahaira@umich.edu"><img src="assets/images/media.svg" alt="Gmail logo" class="hoover-g"></a>
+
+                                    <a href="https://mail.google.com/mail/u/0/jahaira@umich.edu"><img src="assets/images/Facebook-f_Logo-Blue-Logo.wine.svg" alt="Facebook logo" class="hoover-g"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <!-- import 3d interactive element here -->
+                            <!-- <img class="self" alt="headshot" src="assets/images/headshot1.jpg"> -->
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+
+        <div id="about">   
+            <div class="left">
                 <h1> About Me </h1>
                 <p>
                     Hi! My name is Jahaira Flores, and I’m a recent Computer Science graduate from the University of Michigan.
@@ -53,166 +85,312 @@
                     Interested in both front-end and back-end development, I’m actively improving and working toward becoming a full-stack developer to build seamless user experiences from start to finish.
                 </p>
             </div>
-            <!-- <p> Hello! My name is Jahaira Flores, and I’m a recent graduate in Computer Science from the University of Michigan.
-                 I’m passionate about web and mobile app development, and I love finding creative solutions to complex problems. 
-                 My journey into technology has been driven by a desire to make a positive impact through innovative ideas.
-            </p> -->
+            <div class="right">
 
-            <!-- <a href="about.html">Learn More About Me</a> -->
-        </div>
-    </div>
-   
-    <div id="background">
-        <div class="header-shift"><h1>Background</h1></div>
-        <!-- <p>I've worked in numerous fields ranging from art design to prosthetics. Feel free to view my portfolio here or on LinkedIn.</p> -->
-        <div class="containers">
-            <div class="container">
-                <div class="container-shift" style="transform: translateY(-10px);">
-                    <h3>Education</h3>
-                    <img src="assets/images/cap-removebg-preview.png" class="greentob">
+                <div class="bio-container">
+                    <svg class="spinner-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <defs>
+                        <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="white" />
+                            <stop offset="100%" stop-color="#B0A6DC" />
+                        </linearGradient>
+                        </defs>
+                        <!-- Normalized coordinates: perfectly centered at (50,50). -->
+                        <circle
+                        class="spinner"
+                        cx="50" cy="50" r="48"
+                        stroke="url(#circleGradient)"
+                        stroke-width="4"
+                        vector-effect="non-scaling-stroke"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-dasharray="15.85432 38.83922 82.23971 65.15323"
+                        fill="none"
+                        />
+                    </svg>
+
+                    <img src="assets/images/headshot1.jpg" alt="Headshot" class="spinner-image" />
                 </div>
-                <div style="transform: translateY(-30px);">
-                    <ul>
-                        <li>University of Michigan, Class of 2024</li>
-                        <li>B.S. Computer Science</li>
-                        <li>Minor in UX Design</li>
-                    </ul>
-                </div>
-                
+
             </div>
-        
-            <div class="container">     
-                <div class="container-shift" style="transform: translateY(10px);">
-                    <h3>Relevant Coursework</h3>
-                    <img src="assets/images/book-removebg-preview.png" class="icon">
-                </div>
-               
-                <ul>
-                    <li> Data Structures and Algorithms, Web Systems, </li>
-                    <!-- <li> Web Systems, </li> -->
-                    <li> Database Management Systems, User Interface </li>
-                    <li> Development, </li>
-                    <li> Computer Security</li>
-                </ul>
-            </div>
-
-            <div class="container">
-                <div class="container-shift" style="transform: translateY(-10px);">
-                    <h3>Involvements</h3>
-                    <img src="assets/images/network-removebg-preview.png" class="icon">
-                </div>
-                <div style="transform: translateY(-20px);">
-                    <ul>
-                        <li>COOP Careers - Current</li>
-                        <li>CodePath - Alumn</li>
-                        <li>GEECS - UMICH</li>
-                        <li>SHPE - UMICH</li>
-                    </ul>
-                </div>
-                
-            </div>
-
-        
-            <div class="container">
-                <div class="container-shift" style="transform: translateY(20px);">
-                    <h3>Technical Skills</h3>
-                    <img src="assets/images/lprogram-removebg-preview.png" class="icon">
-                </div>
-                <ul>
-                    <li>Languages: Python, C++, JavaScript, SQL</li>
-                    <li>Web Development: HTML, CSS, React, Flask, Django, MySQL, Three.js</li>
-                    <li>Other: Git, REST APIs, Docker, Figma, Blender</li>
-                </ul>
-            </div>
-        
-            <!-- <div>
-                <h3>Certifications & Achievements</h3>
-                <ul>
-                    <li>Google UX Design Certificate (2023)</li>
-                    <li>Dean's List, University of Michigan (2022)</li>
-                </ul>
-            </div> -->
         </div>
-       
-    </div>
-
-    <div id="project">
-        <div class="header-shift"><h1> Selected Projects</h1></div>
-        <div class="grid-container">
-            <a href="insta-clone.html">
-            <figure>
-                <img src="assets/images/insta-clone.jpeg" alt="Project 1">
-                <figcaption>
-                    <!-- <h2>Project 1: React Project</h2> -->
-                    <h2>Project 1: Instagram Clone </h2>
-                    <!-- <a href="/personal_website/"></a> -->
-                </figcaption>
-            </figure>
-            </a>
-            <a href="search-engine.html">
-            <figure>
-                <img src="assets/images/search-engine.png" alt="Project 2">
-                <figcaption>
-                    <!-- <h2>Project 2: Customer Support AI chat bot</h2> -->
-                    <h2>Project 2: Scalable Search Engine</h2>
-                    <!-- <a href="/personal_website/"></a> -->
-                </figcaption>
-            </figure>
-            </a>
-            <a href="asteroids.html">
-            <figure>
-                <img src="assets/images/asteroids.png" alt="Project 3">
-                <figcaption>
-                    <!-- <h2>Project 3: Chrome Extension</h2> -->
-                    <!-- <a href="/personal_website/"></a> -->
-                    <h2>Project 3: Asteroids Game! </h2>
-                </figcaption>
-            </figure>
-            </a>
-            <a href="artistry-explore.html">
-            <figure>
-                <img src="assets/images/artist-search.png" alt="Project 4">
-                <figcaption>
-                    <h2>Project 4: Artistry Explore</h2>
-                    <!-- <a href="/personal_website/"></a> -->
-                </figcaption>
-            </figure>
-            </a>
-            <!-- <figure>
-                <img src="/assets/images/tester-img.jpg" alt="Project 4">
-                <figcaption>
-                    <h2>Project 4: TBD - Espresso</h2>
-                </figcaption>
-            </figure> -->
-        </div> 
-        <div id="more"><a href="full_portfolio.html">See Full Portfolio</a></div>
-       
-    </div>
-
-    <div id="contact">
-            <div id="text-left">
-                <h3>Get in touch:</h3>
-                <p>jahaira@umich.edu</p>
-                
-                <div class="icon-container">
-                    <a href="https://github.com/jflores45?tab=overview&from=2024-08-01&to=2024-08-23"><img src="assets/images/github-color.svg" alt="GitHub logo" class="hoover-g"></a>
-                    
-                    <a href="https://www.linkedin.com/in/flores-jahaira/?trk=opento_sprofile_details"><img src="assets/images/linkedin-icon-logo-svg-vector.svg" alt="LinkedIn logo" class="hoover-g"></a>
-                
-                    <a href="https://mail.google.com/mail/u/0/jahaira@umich.edu"><img src="assets/images/media.svg" alt="Gmail logo" class="hoover-g"></a>
-
-                    <a href="https://mail.google.com/mail/u/0/jahaira@umich.edu"><img src="assets/images/Facebook-f_Logo-Blue-Logo.wine.svg" alt="Facebook logo" class="hoover-g"></a>
-                </div>
-        </div>
-
-        <div id="text-right">
-        <h3> Work with me</h3>
-        <p>I'm eager to connect with like-minded individuals and organizations passionate about technology. If you're interested in collaborating or just want to chat, feel free to reach out via <a a href="https://mail.google.com/mail/u/0/jahaira@umich.edu"> email</a> or <a href="https://www.linkedin.com/in/flores-jahaira/?trk=opento_sprofile_details">LinkedIn!</a></p>
-        </div>
-    </div>
-
     
-    <footer>@2024 Jahaira Flores ALL RIGHTS RESERVED</footer>
+        <div id="background">
+            <div class="header-shift"><h1>Background</h1></div>
+            <div class="containers">
+                
+                <div class="container" id="container-1">
+                    <div class="container-shift" style="transform: translateY(-10px);">
+                        <h3>Education</h3>
+                        <img src="assets/images/cap-removebg-preview.png" class="greentob">
+                    </div>
+                    <div style="transform: translateY(-30px);">
+                        <ul>
+                            <li>University of Michigan, Class of 2024</li>
+                            <li>B.S. Computer Science</li>
+                            <li>Minor in UX Design</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            
+                <div class="container" id="container-2">     
+                    <div class="container-shift" style="transform: translateY(10px);">
+                        <h3>Relevant Coursework</h3>
+                        <img src="assets/images/book-removebg-preview.png" class="icon">
+                    </div>
+                
+                    <ul>
+                        <li> Data Structures and Algorithms, Web Systems, </li>
+                        <!-- <li> Web Systems, </li> -->
+                        <li> Database Management Systems, User Interface </li>
+                        <li> Development, </li>
+                        <li> Computer Security</li>
+                    </ul>
+                </div>
+
+                <div class="container" id="container-3">
+                    <div class="container-shift" style="transform: translateY(-10px);">
+                        <h3>Involvements</h3>
+                        <img src="assets/images/network-removebg-preview.png" class="icon">
+                    </div>
+                    <div style="transform: translateY(-20px);">
+                        <ul>
+                            <li>COOP Careers - Current</li>
+                            <li>CodePath - Alumn</li>
+                            <li>GEECS - UMICH</li>
+                            <li>SHPE - UMICH</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            
+                <div class="container" id="container-4">
+                    <div class="container-shift" style="transform: translateY(20px);">
+                        <!-- <h3>Technical Skills</h3> -->
+                        <h3>Certifications</h3>
+                        <img src="assets/images/lprogram-removebg-preview.png" class="icon">
+                    </div>
+                    <!-- <ul>
+                        <li>Languages: Python, C++, JavaScript, SQL</li>
+                        <li>Web Development: HTML, CSS, React, Flask, Django, MySQL, Three.js</li>
+                        <li>Other: Git, REST APIs, Docker, Figma, Blender</li>
+                    </ul> -->
+                    <ul>
+                        <li> Meta Advanced React (Coursera)</li>
+                        <li>Learn React & Advance React (Codecademy)</li>
+                        <li>Google Analytics Professional Certificate (Coursera)</li>
+                    </ul>
+                </div>
+            
+                <!-- <div>
+                    <h3>Certifications & Achievements</h3>
+                    <ul>
+                        <li>Google UX Design Certificate (2023)</li>
+                        <li>Dean's List, University of Michigan (2022)</li>
+                    </ul>
+                </div> -->
+            </div>
+        
+        </div>
+
+        <div id="Skills">
+            <div class="header-shift">
+                <h1>Technical Skills</h1>
+                <p>Over the years, I have worked with a variety of technologies. Here are some of the technologies I have experience with:</p>
+            </div>
+            
+            <div id="skills_container">
+                <div class="skill">
+                    <img src="/Portfolio/assets/images/python.png"/>
+                    <p> Python </p>
+                </div>
+                
+                <div class="skill">
+                    <img src="/Portfolio/assets/images/c++.png"/>
+                    <p> C++ </p>
+                </div>
+
+                <div class="skill">
+                    <img src="/Portfolio/assets/images/javascript.png"/>
+                    <p> JavaScript </p>
+                </div>
+
+                <div class="skill">
+                    <img src="/Portfolio/assets/images/react.png"/>
+                    <p> React </p>
+                </div>
+
+                 <div class="skill">
+                    <img src="/Portfolio/assets/images/html.png"/>
+                    <p> HTML </p>
+                </div>
+
+                <div class="skill">
+                    <img src="/Portfolio/assets/images/css.png"/>
+                    <p> CSS </p>
+                </div>
+
+                <div class="skill">
+                    <img src="/Portfolio/assets/images/mysql.png"/>
+                    <p> MySQL </p>
+                </div>
+
+                <div class="skill">
+                    <img src="/Portfolio/assets/images/sqlite.jpg"/>
+                    <p> SQLite </p>
+                </div>
+
+                <div class="skill">
+                    <img src="/Portfolio/assets/images/git.png"/>
+                    <p> Git </p>
+                </div>
+
+                <div class="skill">
+                    <img src="/Portfolio/assets/images/docker.png"/>
+                    <p> Docker </p>
+                </div>
+
+                <div class="skill">
+                    <img src="/Portfolio/assets/images/figma.png"/>
+                    <p> Figma </p>
+                </div>
+
+                <div class="skill">
+                    <img src="/Portfolio/assets/images/flask.png"/>
+                    <p> Flask </p>
+                </div>
+
+                 <!-- <div class="skill">
+                    <img src="/Portfolio/assets/images/django.png"/>
+                    <p> Django </p>
+                </div> -->
+
+                <!-- <div class="skill">
+                    <img src="blender.png"/>
+                    <p> Blender </p>
+                </div> -->
+                <!-- <div class="skill">
+                    <img src="threejs.png"/>
+                    <p> Three.js </p>
+                </div> -->
+            </div>
+            <div class="more-skills">
+                <a><p> ... and many more!</p></a>
+            </div>
+           
+        
+        </div>
+
+        <div id="project">
+            <div class="header-shift">
+                <h1> Selected Projects</h1>
+                <p>Explore some of my recent projects below. For more, visit my GitHub profile.</p>
+            </div>
+            <div class="grid-container">
+                <figure>
+                    <h3>Instagram Clone</h3>
+                    <p>February 24, 2022 - Now</p>
+                    <p>An all-in-one web and app development company offering advanced chatbot workflows, website development, and digital marketing services</p>
+                    <a href="insta-clone.html">
+                        <img src="assets/images/asteroids.png" alt="Project 1">
+                    </a>
+                    <!-- <div id="Skills">
+                     
+                        <div class="skill">
+                            <img src="/Portfolio/assets/images/react.png"/>
+                            <p> React </p>
+                        </div>
+
+                        <div class="skill">
+                            <img src="/Portfolio/assets/images/html.png"/>
+                            <p> HTML </p>
+                        </div>
+                    </div> -->
+
+                
+                </figure>
+               
+                <figure>
+                    <h2>Asteroids Game</h2>
+                    <p>February 24, 2022 - Now</p>
+                    <p>An all-in-one web and app development company offering advanced chatbot workflows, website development, and digital marketing services</p>
+                    <a href="asteroids.html">
+                        <img src="assets/images/asteroids.png" alt="Project 3">
+                    </a>
+                </figure>
+            </div> 
+            <div class="more-skills">
+                <a href="/Portfolio/full_portfolio.html">See Full Portfolio</a>
+            </div>
+        
+        </div> 
+
+        <div class="contact">
+                <div class="contact-shift">
+                    <h1>Contact Me</h1>
+                    <p>I'm always eager to explore new opportunities and take on exciting projects. If you have a project in mind, or just want to say hi, feel free to send me a message.</p>
+                </div>
+
+                <!-- <div id="settings"> -->
+                    <div class="contacts">
+                        <div class="icon-container">
+                            <div class="icon-item">
+                                <a href="https://github.com/jflores45?tab=overview&from=2024-08-01&to=2024-08-23">
+                                    <img src="assets/images/github-color.svg" alt="GitHub logo" class="hoover-g">
+                                </a>
+                                <p>GitHub</p>
+                            </div>
+
+                            <div class="icon-item">
+                                <a href="https://www.linkedin.com/in/flores-jahaira/?trk=opento_sprofile_details">
+                                    <img src="assets/images/linkedin-icon-logo-svg-vector.svg" alt="LinkedIn logo" class="hoover-g">
+                                </a>
+                                <p>LinkedIn</p>
+                            </div>
+
+                            <div class="icon-item">
+                                <a href="mailto:jahaira@umich.edu">
+                                    <img src="assets/images/media.svg" alt="Gmail logo" class="hoover-g">
+                                </a>
+                                <p>+1(312)-678-4558</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div>keyboard</div> -->
+                <!-- </div> -->
+                
+                <div id="contact-form">
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="name">Name</label> 
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+
+                        <button type="submit">Send</button>
+                    </form>
+                    <!-- <button type="submit">Send</button> -->
+                </div>
+
+        </div>
+
+        
+        <footer>@2025 Jahaira Flores. All Rights Reserved.</footer>
+
+    </div>
 
     <!-- <script src="assets/js/main.js"></script> -->
 </body>

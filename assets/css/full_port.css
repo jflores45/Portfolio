@@ -1,0 +1,68 @@
+body{
+    background-image: linear-gradient(180deg, rgba(132, 97, 187, 1), rgb(173, 198, 244, 1));
+    /* background-image: linear-gradient(180deg, rgba(224, 236, 251, 0.6), rgba(181, 196, 215, 0.6), rgba(134, 160, 192, 0.6), rgba(117, 145, 179, 0.8)); */
+    font-size: 20px;
+    margin: 80px 60px 80px 60px;
+    padding: 0px;
+    color: white;
+    font-family: "Outfit", serif;
+    font-weight: 30;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+ h1, h2{
+    /* font-family: 'Courier New', cursives; */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .15em;
+    font-weight: 400;
+}
+.inner{
+    background-color: rgba(47, 56, 121, 0.4);
+    border: 2px solid #B0A6DC;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.25), 
+                0 0 10px rgba(255, 255, 255, 0.4 ), 
+                0 0 15px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding-top: 50px;
+}
+.header-shift{
+    padding: 40px 0px 10px 150px;
+}
+.header-shift p{
+    
+    font-size: x-large;
+    font-family: "Outfit", serif;
+    font-style: normal;
+    font-weight: 140;
+    width: 80%;
+}
+
+/*              PROJECT SECTION         */
+.grid-container {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+}
+
+figure img {
+    width: 350px;
+    height: 400px;
+    max-width: 900px;
+    max-height: 950px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+a{
+    text-decoration: none;
+}
+figcaption h2 {
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
