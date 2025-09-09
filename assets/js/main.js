@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
       localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
 
       // Change icon
-      themeIcon.src = isDarkMode ? 'assets/images/moon.png' : 'assets/images/sun_logo.png';
+      themeIcon.src = isDarkMode ? 'assets/images/moon_logo.png' : 'assets/images/sun_logo.png';
     });
 
     // Load the saved theme from localStorage
