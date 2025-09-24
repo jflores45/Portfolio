@@ -616,7 +616,7 @@ body.dark-mode #container-4 {
 }
 /*--------------------- SKILLS -------------------------*/
 
-#Skills{
+#skills{
     min-height: 400px;
     max-height: 1400px;
     /* padding-bottom: 80px; */
@@ -629,7 +629,7 @@ body.dark-mode #container-4 {
     align-items: center;
     flex-wrap: wrap;
     gap: 60px;
-    width: 90%;
+    width: 92%;
     /* padding: 0px 50px 0px 50px; */
     /* padding-left: 140px; */
     padding-top: 20px; 
@@ -839,8 +839,9 @@ body.dark-mode .skill {
     font-weight: 200;
     border-radius: 20px;
     padding: 60px 100px 60px 100px;
-    width: 800px;
+    width: 80%;            
     max-width: 1200px;
+    min-width: 300px;
     height: 350px;
     margin-top: 40px;
 }
