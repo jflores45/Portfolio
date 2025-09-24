@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (themeToggle) {
     themeToggle.addEventListener('click', function() {
       document.body.classList.toggle('dark-mode');
-      document.querySelector(".inner").classList.toggle("dark-mode");
+      document.querySelector(".glass").classList.toggle("dark-mode");
 
       const isDarkMode = document.body.classList.contains('dark-mode');
 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const darkMode = localStorage.getItem('darkMode');
     if (darkMode === 'enabled') {
       document.body.classList.add('dark-mode');
-      document.querySelector(".inner").classList.add("dark-mode");
+      document.querySelector(".glass").classList.add("dark-mode");
       themeIcon.src = 'assets/images/moon_logo.png';
     } else {
       themeIcon.src = 'assets/images/sun_logo.png';

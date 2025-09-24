@@ -10,12 +10,6 @@ body{
     /* backdrop-filter: blur(50px); */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-/* .glass {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(30px);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-} */
 body.dark-mode {
     background-image: linear-gradient(135deg, rgb(195, 101, 138, 1), rgb(71, 94, 172, 1));
     font-size: 20px;
@@ -182,7 +176,7 @@ a:hover {
     cursor: pointer;
 }
 
-.inner{
+.glass{
     background-color: rgba(47, 56, 121, 0.4);
     border: 2px solid #B0A6DC;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.25), 
@@ -193,7 +187,7 @@ a:hover {
     z-index: 1;
     position: relative;
 }
-.inner.dark-mode {
+.glass.dark-mode {
     background-color: rgb(22, 27, 65, 0.8);
     /* border: 2px solid #B0A6DC; */
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.25), 
@@ -499,7 +493,7 @@ body.dark-mode {
 
 @media screen and (min-width: 1024px) {
     .containers{
-        gap: 40px;
+        gap: 60px;
         padding: 20px;
     }
     .container{
@@ -714,15 +708,15 @@ body.dark-mode .skill {
     grid-template-columns: 1fr; 
     gap: 40px;                    
     width: 100%;
-    max-width: 1600px;           
+    /* max-width: 1600px;            */
     /* padding-left: 110px; */
     margin: 0 auto;   /* centers the container */
-    padding: 0 150px;  /* optional: side padding */
+    /* padding: 0 150px;  */
 }
 
 figure img {
     width: 100%;       
-    max-width: 100%; 
+    /* max-width: 100%;  */
     height: auto;      
     border-radius: 20px;
     object-fit: cover;
@@ -914,4 +908,3 @@ footer {
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)); /* Glow effect */
     transform: scale(1.05); /* Slightly scale up the icon */
 }
-
