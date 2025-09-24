@@ -5,7 +5,7 @@ body{
     margin: 80px 60px 80px 60px;
     padding: 0px;
     color: white;
-    font-family: "Outfit", serif;
+    font-family: 'JetBrains Mono', monospace;
     font-weight: 30;
     font-size: 1.3rem;
     line-height: 1.5;
@@ -31,13 +31,14 @@ body{
 .header-shift p{
     
     font-size: x-large;
-    font-family: "Outfit", serif;
+    font-family: 'JetBrains Mono', monospace;
     font-style: normal;
     font-weight: 140;
     width: 80%;
 }
 
 /*              PROJECT SECTION         */
+
 .grid-container {
     display: grid;
     margin: 20px;
