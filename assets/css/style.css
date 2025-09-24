@@ -228,6 +228,7 @@ a:hover {
     width: 70%;
     /* background-color: rosybrown; */
     z-index: 2;
+
     position: relative;
 }
 .title h1{
@@ -398,7 +399,7 @@ body.dark-mode {
   border-radius: 50%;
   object-fit: cover;
 }
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
     .bio-container {
         width: 400px;
         height: 400px;
@@ -408,7 +409,7 @@ body.dark-mode {
         width: 350px; 
         height: 350px;
     }
-}
+} */
 
 @keyframes spin {
   from { transform: rotate(0deg); }
@@ -497,18 +498,16 @@ body.dark-mode {
     font-size: 15px;
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
     .containers{
         gap: 30px;
-        /* margin-left: 40px; */
-        /* background-color: #df99ad; */
     }
     .container{
         width: 200px;
         height: 300px;
         font-size: 12px;
     }
-}
+} */
 
 /* #container-1{
     border: 3px solid #D37B98;
