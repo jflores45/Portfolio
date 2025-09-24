@@ -199,7 +199,7 @@ a:hover {
     padding-top: 50px;
 }
 #home{
-    height: 800px;
+    height: 600px;
     padding: 0;
     color: #fff;
     font-family: 'Courier New', cursives;
@@ -695,6 +695,7 @@ body.dark-mode .skill {
     /* line-height: 1.8; */
     /* color: #e9e7e7; */
     padding-bottom: 100px;
+    /* display: flex; */
 }
 #project p {
     font-family: 'JetBrains Mono', monospace;
@@ -713,12 +714,14 @@ body.dark-mode .skill {
     grid-template-columns: 1fr; 
     gap: 40px;                    
     width: 100%;
-    /* padding-left: 110px; */
-    /* margin: 0 auto;   */
-    justify-content: center;
+    justify-items: center;
 }
-
-figure img {
+.grid-item {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.grid-item img {
     width: 100%;       
     /* max-width: 100%;  */
     height: auto;      
@@ -734,10 +737,10 @@ figure img {
     font-family: 'Courier New', cursives;
 }
 @media screen and (min-width: 1024px) {
-    figure{
+    .grid-item{
         width: 70%;
     }
-    figure img {
+    .grid-item img {
         width: 100%;       
         max-width: 100%; 
         height: auto;      
@@ -833,7 +836,7 @@ figure img {
     border-radius: 20px;
     padding: 60px 100px 60px 100px;
     width: 800px;
-    min-width: 400px;
+    max-width: 1000px;
     height: 350px;
     margin-top: 40px;
 }
