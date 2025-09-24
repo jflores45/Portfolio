@@ -267,6 +267,7 @@ a:hover {
 }
 .icon-container{
     padding-top: 20px;
+    
 }
 .icon-container a{
     padding: 15px;
@@ -499,6 +500,7 @@ body.dark-mode {
 @media screen and (min-width: 1024px) {
     .containers{
         gap: 10px;
+        padding: 20px;
     }
     .container{
         width: 250px;
@@ -626,7 +628,7 @@ body.dark-mode #container-4 {
     align-items: center;
     flex-wrap: wrap;
     gap: 60px;
-    width: 90%;
+    width: 100%;
     /* padding: 0px 50px 0px 50px; */
     /* padding-left: 140px; */
     padding-top: 20px; 
@@ -713,9 +715,9 @@ body.dark-mode .skill {
     gap: 40px;                    
     width: 100%;
     max-width: 1600px;           
-    /* margin: 20px auto; */
-    padding-left: 110px;
-    /* padding: 0 40px; */
+    /* padding-left: 110px; */
+    margin: 0 auto;   /* centers the container */
+    padding: 0 150px;  /* optional: side padding */
 }
 
 figure img {
