@@ -354,7 +354,8 @@ body.dark-mode #terminal {
 .left p{
     font-family: 'JetBrains Mono', monospace;
     font-weight:lighter;
-    font-size: medium;
+    /* font-size: medium; */
+    font-size: large;
     line-height: 1.8;
     color: #e9e7e7;
 }
@@ -469,7 +470,8 @@ body.dark-mode {
     /* font-family: "Outfit", serif; */
     font-family: 'JetBrains Mono', monospace;
     font-weight:lighter;
-    font-size: medium;
+    /* font-size: medium; */
+    font-size: large;
     line-height: 1.8;
     color: #e9e7e7;
     /* font-style: normal;
@@ -505,7 +507,7 @@ body.dark-mode {
 @media screen and (min-width: 1024px) {
     .containers{
         gap: 60px;
-        padding: 10px;
+        padding: 0px;
     }
     .container{
         width: 250px;
@@ -664,7 +666,8 @@ body.dark-mode .skill {
 .skill p {
     /* font-family: "Outfit", serif; */
     font-family: 'JetBrains Mono', monospace;
-    font-size: medium;
+    /* font-size: medium; */
+    font-size: large;
     margin: 0;   /* remove default margin from <p> */
 }
 .skill:hover {
@@ -706,7 +709,8 @@ body.dark-mode .skill {
 #project p {
     font-family: 'JetBrains Mono', monospace;
     font-weight: lighter;
-    font-size: medium;
+    /* font-size: medium; */
+    font-size: large;
     color: #e9e7e7;
 }
 #project h4{
@@ -775,7 +779,8 @@ body.dark-mode .skill {
     font-size: x-large;
     font-family: 'JetBrains Mono', monospace;
     font-weight:lighter;
-    font-size: medium;
+    /* font-size: medium; */
+    font-size: large;
     line-height: 1.8;
     color: #e9e7e7;
     width: 80%;
@@ -825,7 +830,8 @@ body.dark-mode .skill {
 .icon-item p {
     font-family: 'JetBrains Mono', monospace;
     font-weight:lighter;
-    font-size: medium;
+    /* font-size: medium; */
+    font-size: large;
     margin-top: 8px;
     color: white;
 }
