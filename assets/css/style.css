@@ -271,7 +271,6 @@ a:hover {
 }
 .icon-container{
     padding-top: 20px;
-    
 }
 .icon-container a{
     padding: 15px;
@@ -389,12 +388,13 @@ body.dark-mode {
 
 .spinner {
   transform-origin: 50% 50%;
+  /* transform: translate(-40%, -40%); */
   animation: spin 30s linear infinite;
 }
 
 .spinner-image {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   width: 400px; 
   height: 400px;
@@ -402,8 +402,8 @@ body.dark-mode {
   border-radius: 50%;
   object-fit: cover;
 }
-/* @media screen and (min-width: 1024px) {
-    .bio-container {
+@media screen and (min-width: 1024px) {
+    /* .bio-container {
         width: 400px;
         height: 400px;
     }
@@ -411,8 +411,8 @@ body.dark-mode {
     .spinner-image{
         width: 350px; 
         height: 350px;
-    }
-} */
+    } */
+}
 
 @keyframes spin {
   from { transform: rotate(0deg); }
@@ -751,7 +751,7 @@ body.dark-mode .skill {
         width: 70%;
     }
     .grid-item img {
-        width: 140%;       
+        width: 120%;       
         /* max-width: 120%;  */
         height: auto;      
     }
