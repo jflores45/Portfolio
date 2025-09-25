@@ -384,6 +384,9 @@ body.dark-mode {
   inset: 0;     
   width: 100%;
   height: 100%;
+  top: 60%;   /* move whole spinner down */
+  left: 50%;  /* keep it centered horizontally */
+  transform: translate(-50%, -50%);
 }
 
 .spinner {
