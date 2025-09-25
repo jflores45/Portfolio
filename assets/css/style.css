@@ -302,7 +302,6 @@ body.dark-mode #terminal {
 @media (max-width: 1024px) { 
     .left{
         padding-left: 120px;
-        /* background-color:red; */
     }
     .spinner-image{
         width: 300px; 
@@ -752,7 +751,7 @@ body.dark-mode .skill {
         width: 70%;
     }
     .grid-item img {
-        width: 110%;       
+        width: 140%;       
         /* max-width: 120%;  */
         height: auto;      
     }
@@ -851,7 +850,7 @@ body.dark-mode .skill {
     border-radius: 20px;
     padding: 60px 100px 60px 100px;
     width: 80%;            
-    max-width: 1000px;
+    max-width: 1200px;
     min-width: 300px;
     height: 400px;
     margin-top: 40px;
