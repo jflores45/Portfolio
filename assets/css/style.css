@@ -214,7 +214,7 @@ a:hover {
 }
 .left{
     padding-left: 150px;
-    padding-top: 20px;
+    padding-top: 40px;
     /* padding-top: 30px; */
     width: 50%; 
     color: #fff;
@@ -230,8 +230,8 @@ a:hover {
     position: relative;
 }
 .title h1{
-    /* font-size: 60px; */
-    font-size: xx-large;
+    /* font-size: 80px; */
+    /* font-size: xx-large; */
     font-weight: 600;
     margin: 0;
     /* margin-bottom: 20px; */
@@ -302,7 +302,7 @@ body.dark-mode #terminal {
 @media (max-width: 1024px) { 
     .left{
         padding-left: 120px;
-        background-color:red;
+        /* background-color:red; */
     }
     .spinner-image{
         width: 300px; 
@@ -512,7 +512,7 @@ body.dark-mode {
     .container{
         width: 250px;
         height: 350px;
-        font-size: medium;
+        font-size: 20px;
     }
 }
 
@@ -733,7 +733,7 @@ body.dark-mode .skill {
     /* justify-content: center; */
 }
 .grid-item img {
-    width: 100%;       
+    width: 110%;       
     /* max-width: 100%;  */
     height: auto;      
     border-radius: 20px;
@@ -760,7 +760,7 @@ body.dark-mode .skill {
 /* ---------------------CONTACT ---------------------*/
 .contact{
     width: 100%;
-    height: 850px;
+    height: 870px;
     color: white;
     display: flex;
     flex-direction: column;
