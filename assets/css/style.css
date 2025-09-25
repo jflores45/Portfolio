@@ -231,7 +231,7 @@ a:hover {
 }
 .title h1{
     /* font-size: 60px; */
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 600;
     margin: 0;
     /* margin-bottom: 20px; */
@@ -302,6 +302,7 @@ body.dark-mode #terminal {
 @media (max-width: 1024px) { 
     .left{
         padding-left: 120px;
+        background-color:red;
     }
     .spinner-image{
         width: 300px; 
@@ -499,8 +500,8 @@ body.dark-mode {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 140;
     line-height: 1.5;
-    /* font-size: 15px; */
-    font-size: small;
+    font-size: 20px;
+    /* font-size: small; */
 }
 
 @media screen and (min-width: 1024px) {
@@ -751,8 +752,8 @@ body.dark-mode .skill {
         width: 70%;
     }
     .grid-item img {
-        width: 100%;       
-        max-width: 100%; 
+        width: 110%;       
+        /* max-width: 120%;  */
         height: auto;      
     }
 }
