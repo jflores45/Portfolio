@@ -229,7 +229,7 @@ a:hover {
     width: 70%;
     z-index: 2;
     position: relative;
-    font-size: large;
+    font-size: x-large;
 }
 .title h1{
     font-size: 60px;
@@ -513,7 +513,7 @@ body.dark-mode {
     .container{
         width: 250px;
         height: 350px;
-        font-size: 12px;
+        font-size: medium;
     }
 }
 
