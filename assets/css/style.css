@@ -500,7 +500,7 @@ body.dark-mode {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 140;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 15px;
     /* font-size: small; */
 }
 
@@ -512,7 +512,7 @@ body.dark-mode {
     .container{
         width: 250px;
         height: 350px;
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
@@ -851,7 +851,7 @@ body.dark-mode .skill {
     border-radius: 20px;
     padding: 60px 100px 60px 100px;
     width: 80%;            
-    max-width: 1200px;
+    max-width: 1000px;
     min-width: 300px;
     height: 400px;
     margin-top: 40px;
