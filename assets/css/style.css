@@ -733,7 +733,7 @@ body.dark-mode .skill {
     /* justify-content: center; */
 }
 .grid-item img {
-    width: 110%;       
+    width: 120%;       
     /* max-width: 100%;  */
     height: auto;      
     border-radius: 20px;
@@ -851,7 +851,7 @@ body.dark-mode .skill {
     border-radius: 20px;
     padding: 60px 100px 60px 100px;
     width: 80%;            
-    max-width: 1000px;
+    max-width: 1200px;
     min-width: 300px;
     height: 400px;
     margin-top: 40px;
