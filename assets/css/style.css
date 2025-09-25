@@ -229,6 +229,7 @@ a:hover {
     width: 70%;
     z-index: 2;
     position: relative;
+    font-size: large;
 }
 .title h1{
     font-size: 60px;
@@ -460,10 +461,8 @@ body.dark-mode {
 }
 
 .header-shift{
-    
     padding: 40px 0px 10px 150px;
     /* background-color: aqua; */
-
 }
 .header-shift p{
     font-size: x-large;
@@ -476,7 +475,7 @@ body.dark-mode {
     color: #e9e7e7;
     /* font-style: normal;
     font-weight: 140; */
-    width: 80%;
+    width: 90%;
 }
 .containers {
     display: flex;
@@ -501,7 +500,8 @@ body.dark-mode {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 140;
     line-height: 1.5;
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: small;
 }
 
 @media screen and (min-width: 1024px) {
@@ -716,7 +716,7 @@ body.dark-mode .skill {
 #project h4{
     font-family: 'JetBrains Mono', monospace;
     font-weight: lighter;
-    font-size: small;
+    font-size: medium;
     color: #e9e7e7;
 }
 .grid-container {
