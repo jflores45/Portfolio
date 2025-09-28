@@ -132,7 +132,6 @@ body.dark-mode #mode img {
     background-image: linear-gradient(180deg, #b4b8f3, rgba(75, 82, 158, 0.55));
     font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
-    /* border: 3px solid #b1bdd7; */
     border: 3px solid rgb(173, 198, 245);
     color: white;
     font-size: 20px;
@@ -286,7 +285,6 @@ a:hover {
   line-height: 1;              /* match the <p> line height */
   font-family: 'JetBrains Mono', monospace; /* match monospace font */
   animation: blink 0.7s steps(1) infinite;
-  /* color: rgb(184, 155, 238); */
   color: rgb(206, 181, 252);
   font-size: large;
    
@@ -351,7 +349,7 @@ body.dark-mode #terminal {
 }
 .left p{
     font-family: 'JetBrains Mono', monospace;
-    font-weight:lighter;
+    font-weight: lighter;
     /* font-size: medium; */
     font-size: large;
     line-height: 1.8;
@@ -736,7 +734,6 @@ body.dark-mode .skill {
 }
 .grid-item img {
     width: 120%;       
-    /* max-width: 100%;  */
     height: auto;      
     border-radius: 20px;
     object-fit: cover;

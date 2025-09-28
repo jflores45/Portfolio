@@ -1,19 +1,15 @@
 body{
-    background-image: linear-gradient(180deg, rgba(132, 97, 187, 1), rgb(173, 198, 244, 1));
+    background-image: linear-gradient(180deg, rgb(173, 198, 244, 1), rgb(150, 141, 211, 1));
     /* background-image: linear-gradient(180deg, rgba(224, 236, 251, 0.6), rgba(181, 196, 215, 0.6), rgba(134, 160, 192, 0.6), rgba(117, 145, 179, 0.8)); */
-    font-size: 20px;
+    /* font-size: 20px; */
     margin: 80px 60px 80px 60px;
     padding: 0px;
     color: white;
     font-family: 'JetBrains Mono', monospace;
-    font-weight: 30;
-    font-size: 1.3rem;
-    line-height: 1.5;
 }
  h1, h2, h3{
-    /* font-family: 'Courier New', cursives; */
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: .15em;
+    letter-spacing: .10em;
     font-weight: 400;
 }
 .inner{
@@ -23,37 +19,34 @@ body{
                 0 0 10px rgba(255, 255, 255, 0.4 ), 
                 0 0 15px rgba(255, 255, 255, 0.3);
     border-radius: 10px;
-    padding-top: 50px;
+    padding: 50px 0px 50px 0px;
 }
 .header-shift{
     padding: 40px 0px 10px 150px;
 }
 .header-shift p{
-    
-    font-size: x-large;
-    font-family: 'JetBrains Mono', monospace;
-    font-style: normal;
-    font-weight: 140;
-    width: 80%;
+    font-size: large;
+    font-weight: lighter;
+    color: #e9e7e7;
+    width: 90%;
 }
 
 /*              PROJECT SECTION         */
 
 .grid-container {
     display: grid;
-    margin: 20px;
-    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+    /* margin: 20px; */
+    padding-left: 120px;
+    grid-template-columns: repeat(1fr); /* Create two equal-width columns */
 }
 
 figure img {
-    width: 350px;
-    height: 400px;
-    max-width: 900px;
-    max-height: 950px;
+    width: 90%;      
+    height: auto;  
     object-fit: cover;
     display: block;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Center the image horizontally */
 }
 
 a{
@@ -66,4 +59,24 @@ figcaption h2 {
     padding: 10px;
     color: white;
     text-align: center;
+}
+
+.filter-button {
+    font-family: 'JetBrains Mono', monospace;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid 1px rgb(189, 185, 185);
+    background-color: rgba(210, 198, 238, 0.2);
+    color: white;
+}
+.filter-button:hover {
+    transform: translateY(-4px);
+    transition: background-color 0.3s ease; 
+    background-color: rgba(136, 129, 153, 0.4);
+    border: solid 1px rgb(206, 190, 190);
+    cursor: pointer; 
+}
+body.dark-mode .filter-button:hover {
+    background-color: rgba(110, 105, 128, 0.3);
 }
