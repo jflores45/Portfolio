@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+  if (confirm("Site is currently under maintenance. Do you want to go to GitHub?")) {
+    window.location.href = "https://github.com/jflores45";
+  } else {
+      // Do nothing, user stays on the page
+  }
+
   const roles = ["Software Engineer", "UX Designer", "Creative Technologist"];
   // const roles = ["Front-end Developer", "Creative Technologist", "3D Designer"];
   let i = 0, j = 0, current = "", isDeleting = false;

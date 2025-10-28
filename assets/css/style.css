@@ -129,7 +129,8 @@ body.dark-mode #mode img {
     align-items: center;
     width: 300px;
     height: 60px;
-    background-image: linear-gradient(180deg, #b4b8f3, rgba(75, 82, 158, 0.55));
+    /* background-image: linear-gradient(180deg, #a8bbee, rgba(134, 140, 218, 0.55)); */
+    background-image: linear-gradient(180deg, #a8bbee, rgba(123, 129, 206, 0.55));
     font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
     border: 3px solid rgb(173, 198, 245);
@@ -160,11 +161,12 @@ body.dark-mode #res-button:hover {
     background: linear-gradient(180deg, rgba(215, 95, 120, 0.45), rgba(136, 73, 116, 0.55));
     filter: none;
     box-shadow: 0 0 8px 2px rgba(255, 182, 193, 0.8), 0 0 16px 6px rgba(228, 62, 137, 0.6);
-    border: none;
+    /* border: none; */
 } 
 #res-button:hover {
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)); 
     /* transform: scale(1.0); */
+    filter: none;
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
     color: white;
 }
@@ -181,7 +183,8 @@ a:hover {
 }
 
 .glass{
-    background-color: rgba(47, 56, 121, 0.4);
+    /* background-color: rgba(47, 56, 121, 0.4); */
+    background-color: rgba(52, 61, 132, 0.4);
     border: 2px solid #B0A6DC;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.25), 
                 0 0 10px rgba(255, 255, 255, 0.4 ), 
