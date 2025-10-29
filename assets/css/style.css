@@ -8,6 +8,14 @@ body{
     margin: 80px 60px 80px 60px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: inherit; /* copy the same gradient */
+  filter: blur(20px);
+  z-index: -1;         /* keep it behind everything */
+}
 body.dark-mode {
     background-image: linear-gradient(135deg, rgb(195, 101, 138, 1), rgb(133, 97, 155, 1));
     font-size: 20px;
@@ -27,12 +35,15 @@ p{
     width: 600px;
     height: 600px;
     border-radius: 50%;
-    background-color: rgb(155, 153, 219, 0.6);
+    /* background-color: rgba(160, 157, 238, 0.6); */
+    background-color: rgba(188, 157, 238, 0.6);
+    /* background-color: rgba(157, 172, 238, 0.6); */
     position: absolute;
     top: -150px;
     left: -100px;
     filter: blur(60px);
     z-index: 2;
+     /* rgba(156, 152, 252, 0.6) */
 }
 body.dark-mode .circle {
     background-color: rgb(143, 51, 92, 0.5);
@@ -117,7 +128,8 @@ body.dark-mode #mode img {
     align-items: center;
     width: 300px;
     height: 60px;
-    background-image: linear-gradient(180deg, #a8bbee, rgba(123, 129, 206, 0.55));
+    /* background-image: linear-gradient(180deg, #a8bbee, rgba(123, 129, 206, 0.55)); */
+    background-image: linear-gradient(180deg, #9bafe6, rgba(176, 141, 240, 0.55));
     font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
     border: 3px solid rgb(173, 198, 245);
@@ -167,7 +179,9 @@ a:hover {
 }
 
 .glass{
-    background-color: rgba(52, 61, 132, 0.4);
+    /* background-color: rgba(52, 61, 132, 0.4); */
+    /* background-color: rgba(65, 76, 161, 0.4); */
+    background-color: rgba(69, 81, 167, 0.4);
     border: 2px solid #B0A6DC;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.25), 
                 0 0 10px rgba(255, 255, 255, 0.4 ), 
@@ -246,16 +260,16 @@ a:hover {
 
 /* terminal animation */
 #terminal {
-  border-right: 2px solid rgb(255, 255, 255);
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;      /* aligns the span with the text in <p> */
-  line-height: 1;              /* match the <p> line height */
-  font-family: 'JetBrains Mono', monospace; /* match monospace font */
-  animation: blink 0.7s steps(1) infinite;
-  color: rgb(206, 181, 252);
-  font-size: large;
+    border-right: 2px solid rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;      /* aligns the span with the text in <p> */
+    line-height: 1;              /* match the <p> line height */
+    font-family: 'JetBrains Mono', monospace; /* match monospace font */
+    animation: blink 0.7s steps(1) infinite;
+    color: rgb(206, 181, 252);
+    font-size: large;
 }
 body.dark-mode #terminal {
     color: #E884C1;
@@ -275,13 +289,28 @@ body.dark-mode #terminal {
 /* Laptop */
 @media(min-width: 1024px) and (max-width: 1439px){
     #home{
-        /* padding: 0 150px; */
+        padding: 0 120px;
+    }
+    #about{
+        padding: 0 120px;
+    }
+    #background{
+        padding: 0 120px;
+    }
+    #skills{
+        padding: 0 120px;
+    }
+    #project{
+        padding: 0 120px;
+    }
+    .contact-shift{
+        padding-left: 120px;
     }
     .spinner-image{
         width: 300px; 
         height: 300px;
     }
-    .containers{
+    /* .containers{
         gap: 60px;
         padding: 0px;
     }
@@ -289,20 +318,28 @@ body.dark-mode #terminal {
         width: 250px;
         height: 350px;
         font-size: 15px;
-    }
+    } */
 }
 /* Desktop */
 @media (min-width: 1440px) { 
     #home{
-        padding: 0 150px;
+        padding: 0 200px;
     }
     #about{
-        padding: 0 150px;
+        padding: 0 200px;
+    }
+    #background{
+        padding: 0 200px;
     }
     #skills{
-        padding: 0 150px;
+        padding: 0 200px;
     }
-
+    #project{
+        padding: 0 200px;
+    }
+    .contact-shift{
+        padding-left: 200px;
+    }
     .containers{
         gap: 60px;
         padding: 0px;
@@ -323,15 +360,15 @@ body.dark-mode #terminal {
 
 /* ---------------------ABOUT ---------------------*/
 
-#about{
+#about {
     display: flex;
     align-items: center;
     min-height: 800px;
     max-height: 1400px;
     flex-wrap: wrap;
-    padding: 0 120px;
+    /* padding: 0 120px; */
 }
-.left p{
+.left p {
     font-family: 'JetBrains Mono', monospace;
     font-weight: lighter;
     font-size: large;
@@ -415,7 +452,7 @@ body.dark-mode {
     max-height: 1800px;
     padding-bottom: 80px;
     color: white;
-    padding: 0 120px;
+    /* padding: 0 120px; */
 }
 #background h3{
     font-family: 'JetBrains Mono', monospace;
@@ -469,7 +506,7 @@ body.dark-mode {
 
 #container-1 {
   border: 3px solid #df99ad;
-  background: linear-gradient(180deg, rgba(215, 95, 120, 0.45), rgba(136, 73, 116, 0.55));
+  background: linear-gradient(180deg, rgba(215, 95, 120, 0.5), rgba(136, 73, 116, 0.55));
   border-radius: 16px;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), inset 0 0 8px rgba(255, 255, 255, 0.05);
@@ -477,7 +514,7 @@ body.dark-mode {
 
 #container-2 {
   border: 3px solid rgba(206, 187, 235, 0.4);
-  background: linear-gradient(180deg, rgba(131, 97, 184, 0.45), rgba(50, 94, 159, 0.55));
+  background: linear-gradient(180deg, rgba(131, 97, 184, 0.5), rgba(50, 94, 159, 0.55));
   border-radius: 16px;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), inset 0 0 8px rgba(255, 255, 255, 0.05);
@@ -485,7 +522,7 @@ body.dark-mode {
 
 #container-3 {
   border: 3px solid rgba(223, 177, 250, 0.4);
-  background: linear-gradient(180deg, rgba(155, 96, 188, 0.45), rgba(80, 87, 160, 0.55));
+  background: linear-gradient(180deg, rgba(155, 96, 188, 0.5), rgba(80, 87, 160, 0.55));
   border-radius: 16px;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), inset 0 0 8px rgba(255, 255, 255, 0.05);
@@ -493,7 +530,7 @@ body.dark-mode {
 
 #container-4 {
   border: 3px solid rgba(190, 198, 241, 0.4);
-  background: linear-gradient(180deg, rgba(107, 114, 156, 0.45), rgba(37, 102, 144, 0.55));
+  background: linear-gradient(180deg, rgba(107, 114, 156, 0.5), rgba(37, 102, 144, 0.55));
   border-radius: 16px;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), inset 0 0 8px rgba(255, 255, 255, 0.05);
@@ -555,7 +592,7 @@ body.dark-mode #container-4 {
     min-height: 400px;
     max-height: 1400px;
     color: white;
-    padding: 0 120px;
+    /* padding: 0 120px; */
 }
 
 #skills_container {
@@ -615,7 +652,7 @@ body.dark-mode .skill {
     max-height: 2600px;
     color: white;
     padding-bottom: 100px;
-    padding: 0 120px;
+    /* padding: 0 120px; */
     /* display: flex; */
 }
 #project p {
@@ -685,7 +722,7 @@ body.dark-mode .skill {
 }
 .contact-shift{
     /* text-align: left; */
-    padding-left: 120px;
+    /* padding-left: 120px; */
 }
 .contact-shift p{
     font-size: x-large;
