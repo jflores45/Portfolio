@@ -54,13 +54,6 @@
                                 <h1>Hello, I'm</h1>
                                 <h1>Jahaira Flores</h1>
                             </div>
-                            <!--                            
-                            <div class="console-container">
-                                <span id="text"></span>
-                                <div class="console-underscore" id="console">&#95;</div>
-                            </div> -->
-                            <!-- <h1>Hello, I'm jahaira</h1> -->
-                            <!-- <div class="typewriter"><p>Driven by curiosity, I’m eager to create, learn, and grow.</p></div> -->
                             
                             <p>I'm a passionate <span id="terminal"></span></p>
 
@@ -96,11 +89,15 @@
         <div id="about">   
             <div class="left">
                 <h1> About Me </h1>
-                <p>
+                <!-- <p>
                     Hi! My name is Jahaira Flores, and I’m a recent Computer Science graduate from the University of Michigan.
                     I have a passion for web and mobile app development, and I enjoy turning complex problems into creative, user-friendly solutions.
                     My journey into technology began with a fascination for how innovative ideas can drive positive change, and I’m excited to keep learning and growing as I explore new opportunities.
                     Interested in both front-end and back-end development, I’m actively working toward becoming a full-stack developer to build seamless user experiences from start to finish.
+                </p> -->
+                <p>
+                    Hi! I’m Jahaira Flores, a Computer Science graduate from the University of Michigan and a first-generation software engineer. I love creating accessible, user-focused web experiences that blend creativity and problem-solving. My path into tech started with curiosity about how innovation can improve people’s lives — and that curiosity has grown into a drive to build meaningful, inclusive digital solutions.
+                    I’m currently expanding my skills across front-end and back-end development to become a full-stack engineer who brings thoughtful design and functionality together from start to finish.
                 </p>
             </div>
             <div class="right">
@@ -140,7 +137,7 @@
                         <h3>Education</h3>
                         <img src="assets/images/cap-removebg-preview.png" class="greentob" alt="education">
                     </div>
-                    <div style="transform: translateY(-30px);">
+                    <div class="container-text" style="transform: translateY(-30px);">
                         <ul>
                             <li>University of Michigan</li>
                             <l1>Class of 2024</l1>
@@ -155,14 +152,16 @@
                         <h3>Coursework</h3>
                         <img src="assets/images/book-removebg-preview.png" class="icon" alt="coursework">
                     </div>
-                
-                    <ul>
-                        <li> Data Structures & Algorithms, </li>
-                        <li> Database Management, </li>
-                        <li> Web Systems, </li>
-                        <li> UI Development, </li>
-                        <li> Computer Security</li>
-                    </ul>
+                    <div class="container-text">
+                        <ul>
+                            <li> Data Structures & Algorithms, </li>
+                            <li> Database Management, </li>
+                            <li> Web Systems, </li>
+                            <li> UI Development, </li>
+                            <li> Computer Security</li>
+                        </ul>
+                    </div>
+                    
                 </div>
 
                 <div class="container" id="container-3">
@@ -170,7 +169,7 @@
                         <h3>Involvements</h3>
                         <img src="assets/images/network-removebg-preview.png" class="icon" alt="involvements">
                     </div>
-                    <div style="transform: translateY(-20px);">
+                    <div class="container-text" style="transform: translateY(-20px);">
                         <ul>
                             <li>COOP Careers: Current</li>
                             <li>CodePath: Alumn</li>
@@ -193,11 +192,14 @@
                         <li>Web Development: HTML, CSS, React, Flask, Django, MySQL, Three.js</li>
                         <li>Other: Git, REST APIs, Docker, Figma, Blender</li>
                     </ul> -->
-                    <ul>
-                        <li> Meta Advanced React (Coursera)</li>
-                        <li>Learn React & Advance React (Codecademy)</li>
-                        <li>Google Analytics Professional Certificate (Coursera)</li>
-                    </ul>
+                    <div class="container-text">
+                        <ul>
+                            <li> Meta Advanced React (Coursera)</li>
+                            <li>Learn React & Advance React (Codecademy)</li>
+                            <li>Google Analytics Professional Certificate (Coursera)</li>
+                        </ul>
+                    </div>
+                    
                 </div>
             
                 <!-- <div>
@@ -218,62 +220,62 @@
             </div>
             
             <div id="skills_container">
-                <div class="skill">
+                <div class="skill" id="python">
                     <img src="/Portfolio/assets/images/python.png" alt="python"/>
                     <p> Python </p>
                 </div>
-                
-                <div class="skill">
-                    <img src="/Portfolio/assets/images/c++.png" alt="c++"/>
-                    <p> C++ </p>
-                </div>
 
-                <div class="skill">
+                <div class="skill" id="js">
                     <img src="/Portfolio/assets/images/javascript.png" alt="js"/>
-                    <p> JavaScript </p>
+                    <p> Javascript </p>
                 </div>
 
-                <div class="skill">
+                <div class="skill" id="react">
                     <img src="/Portfolio/assets/images/react.png" alt="react"/>
                     <p> React </p>
                 </div>
 
-                 <div class="skill">
+                <div class="skill" id="c">
+                    <img src="/Portfolio/assets/images/c++.png" alt="c++"/>
+                    <p> C++ </p>
+                </div>
+
+                 <div class="skill" id="html">
                     <img src="/Portfolio/assets/images/html.png" alt="html"/>
                     <p> HTML </p>
                 </div>
 
-                <div class="skill">
+                <div class="skill" id="css">
                     <img src="/Portfolio/assets/images/css.png" alt="css"/>
                     <p> CSS </p>
                 </div>
 
-                <div class="skill">
+                <div class="skill" id="mysql">
                     <img src="/Portfolio/assets/images/mysql.png" alt="mysql"/>
                     <p> MySQL </p>
                 </div>
 
-                <div class="skill">
-                    <img src="/Portfolio/assets/images/sqlite.jpg" alt="sqlite"/>
+                <div class="skill" id="sqlite">
+                    <img src="/Portfolio/assets/images/sqlite.png" alt="sqlite"/>
                     <p> SQLite </p>
                 </div>
 
-                <div class="skill">
+                <div class="skill" id="git">
                     <img src="/Portfolio/assets/images/git.png" alt="git"/>
                     <p> Git </p>
                 </div>
 
-                <div class="skill">
+                <div class="skill" id="docker">
                     <img src="/Portfolio/assets/images/docker.png" alt="docker"/>
                     <p> Docker </p>
                 </div>
 
-                <div class="skill">
+                <div class="skill" id="figma">
                     <img src="/Portfolio/assets/images/figma.png" alt="figma"/>
                     <p> Figma </p>
                 </div>
 
-                <div class="skill">
+                <div class="skill" id="flask">
                     <img src="/Portfolio/assets/images/flask.png" alt="flask"/>
                     <p> Flask </p>
                 </div>
@@ -336,8 +338,8 @@
                 </div>
             </div> 
             <div class="more-skills">
-                <!-- <a href="/Portfolio/full_portfolio.html">See Full Portfolio</a> -->
-                <a href="https://github.com/jflores45?tab=overview&from=2024-08-01&to=2024-08-23">See Full Portfolio</a>
+                <a href="/Portfolio/full_portfolio.html">See Full Portfolio</a>
+                <!-- <a href="https://github.com/jflores45?tab=overview&from=2024-08-01&to=2024-08-23">See Full Portfolio</a> -->
             </div>
         
         </div> 
@@ -346,7 +348,7 @@
             <!-- <div class="header-shift"> -->
             <div class="contact-shift">
                 <h1>Contact Me</h1>
-                <p>I'm always eager to explore new opportunities and take on exciting projects. If you have a project in mind, or just want to say hi, feel free to send me a message.</p>
+                <p>I'm always eager to explore new opportunities and take on exciting projects. If you have a project in mind, or just want to say hi, feel free to send me a message! :D</p>
             </div>
 
             <!-- <div id="settings"> -->
@@ -366,7 +368,7 @@
                             <p>LinkedIn</p>
                         </div>
 
-                        <div class="icon-item">
+                        <div class="icon-item" id="icon-3">
                             <a href="mailto:jahaira@umich.edu">
                                 <img src="assets/images/phone.png" alt="Gmail logo" class="hoover-g">
                             </a>
