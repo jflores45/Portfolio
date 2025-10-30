@@ -389,13 +389,12 @@ body.dark-mode #terminal {
 
 /* Desktop (1440–1919) */
 @media (min-width: 1440px) and (max-width: 1919px) {
-  #home, #about, #background, #skills, #project { padding: 0 160px; }
-  .skill { width: 150px; }
-  #skills_container { gap: 40px; }
-  .contact-shift { padding-left: 160px; }
-  .containers { gap: 30px; }
-  .container { width: 230px; height: 330px; font-size: 15px; }
-  .spinner-svg, .spinner-image {top: 80%; left: 50%;}
+   #home, #about, #background, #skills, #project { padding: 0 120px; }
+  .skill { width: 140px; }
+  #skills_container { gap: 20px; }
+  .contact-shift { padding-left: 120px; }
+  .containers { gap: 10px; }
+  .container { padding-top: 100px; width: 210px; height: 310px; font-size: 15px; }
   /* .spinner-image { width: 280px; height: 280px; } */
 }
 
