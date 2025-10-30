@@ -391,10 +391,10 @@ body.dark-mode #terminal {
 /* Desktop (1440–1919) */
 @media (min-width: 1440px) and (max-width: 1919px) {
   .glass.dark-mode{ background-color:  rgb(255, 153, 0);}
-  #home, #about, #background, #skills, #project { padding: 0 140px; }
-  .skill { width: 140px; }
+  #home, #about, #background, #skills, #project { padding: 0 120px; }
+  .skill { width: 120px; }
   #skills_container { gap: 20px; }
-  .contact-shift { padding-left: 140px; }
+  .contact-shift { padding-left: 120px; }
   .containers { gap: 10px; }
   .container { width: 230px; height: 330px; font-size: 15px; }
   .spinner-svg, .spinner-image {top: 80%; left: 50%;}
