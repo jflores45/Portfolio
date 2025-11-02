@@ -195,7 +195,7 @@ a:hover {
     position: relative;
 }
 .glass.dark-mode {
-    /* background-color: rgb(22, 27, 65, 0.8); */
+    background-color: rgb(22, 27, 65, 0.8);
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.25), 
                 0 0 10px rgba(255, 255, 255, 0.4 ), 
                 0 0 15px rgba(255, 255, 255, 0.4);
@@ -378,7 +378,7 @@ body.dark-mode #terminal {
 /* Laptop (1024–1439) */
 @media (min-width: 1024px) and (max-width: 1439px) {
   /* slightly smaller padding for typical laptops */
-  .glass.dark-mode{ background-color:  rgb(229, 255, 0);}
+  /* .glass.dark-mode{ background-color:  rgb(229, 255, 0);} */
   #home, #about, #background, #skills, #project { padding: 0 120px; }
   .skill { width: 140px; }
   #skills_container { gap: 20px; }
@@ -391,20 +391,20 @@ body.dark-mode #terminal {
 /* Desktop (1440–1919) */
 @media (min-width: 1440px) and (max-width: 1919px) {
   /* .glass.dark-mode{ background-color:  rgb(255, 153, 0);} */
-  #home, #about, #background, #skills, #project { padding: 0 180px; }
-  .skill { width: 180px; }
-  #skills_container { gap: 20px; }
-  .contact-shift { padding-left: 180px; }
-  .containers { gap: 10px; }
-  .container { width: 250px; height: 350px; font-size: 15px; }
-  .spinner-svg, .spinner-image {top: 80%; left: 70%;}
+  #home, #about, #background, #skills, #project { padding: 0 140px; }
+  .skill { width: 140px; }
+  #skills_container { gap: 10px; }
+  .contact-shift { padding-left: 140px; }
+  .containers { gap: 10px; padding: 0; }
+  .container { width: 200px; height: 300px; font-size: 15px; }
+  .spinner-svg, .spinner-image {top: 80%; left: 50%;}
   /* .spinner-image { width: 280px; height: 280px; } */
 }
 
 /* Large desktop / 4k (>=1920) */
 @media (min-width: 1920px) { 
-  .glass.dark-mode{ background-color:  rgb(255, 0, 0);}
-  #home, #about, #background, #skills, #project { padding: 0 200px; }
+  .glass.dark-mode{ background-color: rgb(255, 0, 0);}
+  #home, #about, #background, #skills, #project { padding: 0 180px; }
   .skill { width: 160px; }
   #skills_container { gap: 60px; }
   .contact-shift { padding-left: 200px; }
@@ -557,6 +557,7 @@ body.dark-mode {
     font-weight: 140;
     line-height: 1.5;
     /* font-size: 15px; */
+    /* background-color: #E884C1; */
 }
 .container-text{
     width: 120%;
@@ -571,7 +572,6 @@ body.dark-mode {
 }
 
 #container-2 {
-    
     border: 3px solid rgba(206, 187, 235, 0.4);
     background: linear-gradient(180deg, rgba(131, 97, 184, 0.5), rgba(50, 94, 159, 0.55));
     border-radius: 16px;
