@@ -40,7 +40,7 @@
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#background">Background</a></li>
                                 <li><a href="#project">Project</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#contact-form">Contact</a></li>
                             </ul>
                             <div id="mode">
                                 <img id="theme-icon" src="assets/images/sun_logo.png" alt="dark mode"/>
@@ -88,7 +88,7 @@
 
         <div id="about">   
             <div class="left">
-                <h1> About Me </h1>
+                <h2> About Me </h2>
                 <!-- <p>
                     Hi! My name is Jahaira Flores, and I’m a recent Computer Science graduate from the University of Michigan.
                     I have a passion for web and mobile app development, and I enjoy turning complex problems into creative, user-friendly solutions.
@@ -96,9 +96,12 @@
                     Interested in both front-end and back-end development, I’m actively working toward becoming a full-stack developer to build seamless user experiences from start to finish.
                 </p> -->
                 <p>
-                    Hi! I’m Jahaira Flores, a Computer Science graduate from the University of Michigan and a first-generation software engineer. I love creating accessible, user-focused web experiences that blend creativity and problem-solving. My path into tech started with curiosity about how innovation can improve people’s lives — and that curiosity has grown into a drive to build meaningful, inclusive digital solutions.
+                    Hi! I’m Jahaira Flores, a Computer Science graduate from the University of Michigan and a first-generation software engineer. I enjoy creating accessible, user-focused web experiences that blend creativity and problem-solving. My path into tech started with curiosity about how innovation can improve people’s lives — and that curiosity has grown into a drive to build meaningful, inclusive digital solutions.
                     I’m currently expanding my skills across front-end and back-end development to become a full-stack engineer who brings thoughtful design and functionality together from start to finish.
                 </p>
+                <div id="about-me">
+                    <button>More about me!</button>
+                </div>
             </div>
             <div class="right">
                 <div class="bio-container">
@@ -126,12 +129,32 @@
                     <img src="assets/images/headshot1.jpg" alt="Headshot" class="spinner-image" />
                 </div>
             </div>
+            <!-- Future -->
+            <div class="about-stats">
+                <div class="stat">
+                  <h3>2</h3>
+                  <p>Years of Experience</p>
+                </div>
+                <div class="stat">
+                  <h3>10</h3>
+                  <p>Projects Completed</p>
+                </div>
+                <div class="stat">
+                  <h3>8</h3>
+                  <p>Technical Skills</p>
+                </div>
+                <div class="stat">
+                  <h3>200</h3>
+                  <p>Leetcode Solved</p>
+                </div>
+            </div>        
+
         </div>
     
         <div id="background">
-            <div class="header-shift"><h1>Background</h1></div>
+            <div class="header-shift"><h2>Background</h2></div>
+            
             <div class="containers">
-                
                 <div class="container" id="container-1">
                     <div class="container-shift" style="transform: translateY(-10px);">
                         <h3>Education</h3>
@@ -161,7 +184,6 @@
                             <li> Computer Security</li>
                         </ul>
                     </div>
-                    
                 </div>
 
                 <div class="container" id="container-3">
@@ -177,7 +199,6 @@
                             <li>SHPE: UMICH</li>
                         </ul>
                     </div>
-                    
                 </div>
 
             
@@ -187,11 +208,6 @@
                         <h3>Certifications</h3>
                         <img src="assets/images/lprogram-removebg-preview.png" class="icon" alt="certifications">
                     </div>
-                    <!-- <ul>
-                        <li>Languages: Python, C++, JavaScript, SQL</li>
-                        <li>Web Development: HTML, CSS, React, Flask, Django, MySQL, Three.js</li>
-                        <li>Other: Git, REST APIs, Docker, Figma, Blender</li>
-                    </ul> -->
                     <div class="container-text">
                         <ul>
                             <li> Meta Advanced React (Coursera)</li>
@@ -199,73 +215,64 @@
                             <li>Google Analytics Professional Certificate (Coursera)</li>
                         </ul>
                     </div>
-                    
                 </div>
-            
-                <!-- <div>
-                    <h3>Certifications & Achievements</h3>
-                    <ul>
-                        <li>Google UX Design Certificate (2023)</li>
-                        <li>Dean's List, University of Michigan (2022)</li>
-                    </ul>
-                </div> -->
             </div>
         
         </div>
 
         <div id="skills">
-            <div class="header-shift">
-                <h1>Technical Skills</h1>
+            <!-- <div class="header-shift"> -->
+                <!-- <h3>Technical Skills</h3> -->
                 <p>Over the years, I have worked with a variety of technologies. Here are some of the technologies I have experience with:</p>
-            </div>
+            <!-- </div> -->
             
-            <div id="skills_container">
-                <div class="skill" id="python">
+            <div class="skills_container">
+                <div class="skill python">
                     <img src="/Portfolio/assets/images/python.png" alt="python"/>
                     <p> Python </p>
                 </div>
 
-                <div class="skill" id="js">
+                <div class="skill js">
                     <img src="/Portfolio/assets/images/javascript.png" alt="js"/>
                     <p> Javascript </p>
                 </div>
 
-                <div class="skill" id="react">
+                <div class="skill react">
                     <img src="/Portfolio/assets/images/react.png" alt="react"/>
                     <p> React </p>
                 </div>
 
-                <div class="skill" id="c">
+                <div class="skill c">
                     <img src="/Portfolio/assets/images/c++.png" alt="c++"/>
                     <p> C++ </p>
                 </div>
 
-                 <div class="skill" id="html">
+                 <div class="skill html">
                     <img src="/Portfolio/assets/images/html.png" alt="html"/>
                     <p> HTML </p>
                 </div>
 
-                <div class="skill" id="css">
+                <div class="skill css">
                     <img src="/Portfolio/assets/images/css.png" alt="css"/>
                     <p> CSS </p>
                 </div>
 
-                <div class="skill" id="mysql">
+                <div class="skill mysql">
                     <img src="/Portfolio/assets/images/mysql.png" alt="mysql"/>
                     <p> MySQL </p>
                 </div>
 
-                <div class="skill" id="sqlite">
+                <div class="skill sqlite">
                     <img src="/Portfolio/assets/images/sqlite.png" alt="sqlite"/>
                     <p> SQLite </p>
                 </div>
 
-                <div class="skill" id="git">
+                <div class="skill git">
                     <img src="/Portfolio/assets/images/git.png" alt="git"/>
                     <p> Git </p>
                 </div>
 
-                <div class="skill" id="docker">
+                <div class="skill docker">
                     <img src="/Portfolio/assets/images/docker.png" alt="docker"/>
                     <p> Docker </p>
                 </div>
@@ -275,7 +282,7 @@
                     <p> Figma </p>
                 </div>
 
-                <div class="skill" id="flask">
+                <div class="skill flask">
                     <img src="/Portfolio/assets/images/flask.png" alt="flask"/>
                     <p> Flask </p>
                 </div>
@@ -283,58 +290,99 @@
                  <!-- <div class="skill">
                     <img src="/Portfolio/assets/images/django.png"/>
                     <p> Django </p>
-                </div> -->
+                </div>
 
-                <!-- <div class="skill">
+                <div class="skill">
                     <img src="blender.png"/>
                     <p> Blender </p>
-                </div> -->
-                <!-- <div class="skill">
+                </div>
+
+                <div class="skill">
                     <img src="threejs.png"/>
                     <p> Three.js </p>
                 </div> -->
             </div>
+
             <div class="more-skills">
-                <a><p> ... and many more!</p></a>
+                <a> ... and many more!</a>
             </div>
-           
         
         </div>
 
         <div id="project">
             <div class="header-shift">
-                <h1> Selected Projects</h1>
+                <h2> Selected Projects</h2>
                 <p>Explore some of my recent projects below. For more, visit my <a href="https://github.com/jflores45 ">GitHub</a> profile.</p>
             </div>
             <div class="grid-container">
                 <div class="grid-item">
-                    <h2>Instagram Clone</h2>
+                    <h3>Instagram Clone</h3>
                     <h4>January 24, 2024 - May 2024</h4>
                     <p>This project is a simplified clone of Instagram, allowing users to sign up, upload photos, follow other users, like posts, and leave comments. The goal was to replicate the core features of Instagram using modern web technologies.</p>
                     <a href="insta-clone.html">
                         <img src="assets/images/insta.png" alt="Project 1">
                     </a>
-                    <!-- <div id="Skills">
-                     
-                        <div class="skill">
-                            <img src="/Portfolio/assets/images/react.png"/>
+                    <div class="skills_container">
+                        <div class="skill react">
+                            <img src="/Portfolio/assets/images/react.png" alt="react"/>
                             <p> React </p>
                         </div>
+                        
+                        <div class="skill flask">
+                            <img src="/Portfolio/assets/images/flask.png" alt="flask"/>
+                            <p> Flask </p>
+                        </div>
 
-                        <div class="skill">
-                            <img src="/Portfolio/assets/images/html.png"/>
+                        <div class="skill sqlite">
+                            <img src="/Portfolio/assets/images/sqlite.png" alt="sqlite"/>
+                            <p> SQLite </p>
+                        </div>
+
+                        <div class="skill html">
+                            <img src="/Portfolio/assets/images/html.png" alt="html"/>
                             <p> HTML </p>
                         </div>
-                    </div> -->
+
+                        <div class="skill css">
+                            <img src="/Portfolio/assets/images/css.png" alt="css"/>
+                            <p> CSS </p>
+                        </div>
+                    </div>
                 </div>
                
                 <div class="grid-item">
-                    <h2>Mopey</h2>
+                    <h3>Mopey</h3>
                     <h4>June 8, 2025 - Current</h4>
                     <p>Mopey is a task manager app designed to help users navigate their day while prioritizing mental health. It encourages self-improvement by balancing productivity with well-being, offering tools to track tasks, moods, and personal growth.</p>
                     <a href="asteroids.html">
                         <img src="assets/images/mopey.png" alt="Project 3">
                     </a>
+                    <div class="skills_container">
+                        <div class="skill react">
+                            <img src="/Portfolio/assets/images/react.png" alt="react"/>
+                            <p> React </p>
+                        </div>
+                        
+                        <div class="skill flask">
+                            <img src="/Portfolio/assets/images/flask.png" alt="flask"/>
+                            <p> Flask </p>
+                        </div>
+
+                        <div class="skill sqlite">
+                            <img src="/Portfolio/assets/images/sqlite.png" alt="sqlite"/>
+                            <p> SQLite </p>
+                        </div>
+
+                        <div class="skill html">
+                            <img src="/Portfolio/assets/images/html.png" alt="html"/>
+                            <p> HTML </p>
+                        </div>
+                        
+                        <div class="skill css">
+                            <img src="/Portfolio/assets/images/css.png" alt="css"/>
+                            <p> CSS </p>
+                        </div>
+                    </div>
                 </div>
             </div> 
             <div class="more-skills">
@@ -347,7 +395,7 @@
         <div class="contact">
             <!-- <div class="header-shift"> -->
             <div class="contact-shift">
-                <h1>Contact Me</h1>
+                <h2>Contact Me</h2>
                 <p>I'm always eager to explore new opportunities and take on exciting projects. If you have a project in mind, or just want to say hi, feel free to send me a message! :D</p>
             </div>
 
@@ -357,22 +405,22 @@
                         <div class="icon-item">
                             <a href="https://github.com/jflores45?tab=overview&from=2024-08-01&to=2024-08-23">
                                 <img src="assets/images/github-color.svg" alt="GitHub logo" class="hoover-g">
+                                <p>GitHub</p>
                             </a>
-                            <p>GitHub</p>
                         </div>
 
                         <div class="icon-item">
                             <a href="https://www.linkedin.com/in/flores-jahaira/?trk=opento_sprofile_details">
                                 <img src="assets/images/linkedin-icon-logo-svg-vector.svg" alt="LinkedIn logo" class="hoover-g">
+                                <p>Linkedin</p>
                             </a>
-                            <p>Linkedin</p>
                         </div>
 
                         <div class="icon-item" id="icon-3">
                             <a href="mailto:jahaira@umich.edu">
                                 <img src="assets/images/phone.png" alt="Gmail logo" class="hoover-g">
+                                <p>+1(312)678-4558</p>
                             </a>
-                            <p>+1(312)678-4558</p>
                         </div>
                     </div>
                 </div>

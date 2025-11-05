@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Do nothing, user stays on the page
   }
 
-  const roles = ["Software Engineer", "UX Designer", "Creative Technologist"];
+  const roles = ["Software Engineer", "UI/UX Designer", "Creative Technologist"];
   // const roles = ["Front-end Developer", "Creative Technologist", "3D Designer"];
   let i = 0, j = 0, current = "", isDeleting = false;
   const speed = 100;
