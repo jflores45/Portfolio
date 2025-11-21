@@ -25,7 +25,7 @@ body.dark-mode {
 }
 /* @import url('https://cdn.jsdelivr.net/gh/vercel/geist-font/GeistMono/stylesheet.css'); */
 
- h1 {
+h1 {
     /* font-family: Inconsolata , ui-monospace, SFMono-Regular, Menlo, Monaco, monospace; */
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: .10em;
@@ -37,7 +37,7 @@ h2, h3{
     /* font-family: Inconsolata , ui-monospace, SFMono-Regular, Menlo, Monaco, monospace; */
     letter-spacing: .10em;
     font-weight: 750;
-    color: #dcd8d8;
+    color: white;
 }
 h4{
     font-family: 'JetBrains Mono', monospace;
@@ -201,7 +201,8 @@ a:hover {
 }
 
 .glass{
-    background-color: rgba(69, 81, 167, 0.4);
+    /* background-color: rgba(69, 81, 167, 0.4); */
+    background-color: rgba(126, 138, 205, 0.8);
     border: 2px solid #B0A6DC;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.25), 
                 0 0 10px rgba(255, 255, 255, 0.4 ), 
@@ -353,6 +354,7 @@ body.dark-mode #terminal {
   /* slightly smaller padding for typical laptops */
   /* .glass.dark-mode{ background-color:  rgb(229, 255, 0);} */
   #home, #about, #background, #skills, #project { padding: 0 120px; }
+  .name-pronunce {width: 500px;}
   .skill { width: 140px; }
   .skills_container { gap: 20px; }
   .contact-shift { padding-left: 120px; }
@@ -366,8 +368,10 @@ body.dark-mode #terminal {
   /* .glass.dark-mode{ background-color:  rgb(255, 153, 0);} */
   #res-button{ width: 280px; height: 60px; }
   #home, #about, #background, #skills, #project { padding: 0px 120px; }
+  .name-pronunce {width: 500px;}
   .skill { width: 150px; }
   .skills_container { gap: 10px; }
+  #project .skills_container{ gap: 40px; }
   .contact-shift { padding-left: 120px; }
   .containers { gap: 5px; padding: 0; }
   .container { width: 210px; height: 310px; font-size: small; }
@@ -399,7 +403,7 @@ body.dark-mode #terminal {
     max-height: 1400px;
     flex-wrap: wrap;
     padding-bottom: 50px;
-    background-color: rgba(200, 181, 236, 0.2);
+    background-color: rgba(126, 138, 205);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px); 
 }
@@ -495,21 +499,24 @@ body.dark-mode {
 
 
 #pageOverlay  {
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 50%;     
-  height: 50%;
-  background-color: rgba(4, 3, 22, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translate(50%, 50%);
-  z-index: 1000;
-  border-radius: 10px;
-  padding: 20px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 50%;     
+    height: 50%;
+    background-color: rgba(4, 3, 22, 0.9);
+    border: 1px solid rgb(206, 213, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50%, 50%);
+    z-index: 1000;
+    border-radius: 10px;
+    padding: 20px;
 } 
-
+body.dark-mode #pageOverlay{
+    border: 1px solid rgb(117, 117, 186);
+}
 .overlay-content{
     padding: 10px 50px;
     width: 100%;
@@ -547,7 +554,6 @@ body.dark-mode {
     border: 2px solid rgb(173, 198, 245);
 }
 body.dark-mode #about-me button {
-
     border: 2px solid rgba(215, 95, 120, 0.7);
     background: linear-gradient(180deg, rgba(215, 95, 120, 0.45), rgba(136, 73, 116, 0.55));
 }
@@ -558,7 +564,7 @@ body.dark-mode #about-me button:hover {
 } 
 
 
-  .about-stats {
+.about-stats {
     display: flex;
     justify-content: center;
     gap: 10rem;
@@ -602,14 +608,6 @@ body.dark-mode #about-me button:hover {
     /* padding: 40px 0px 10px 150px; */
 }
 .header-shift p{
-    /* font-family: 'JetBrains Mono', monospace;
-    font-weight: lighter;
-    font-size: large;
-    line-height: 1.8;
-    color: #e9e7e7; */
-
-    /* font-style: normal;
-    font-weight: 140; */
     width: 100%;
 }
 .containers {
@@ -617,21 +615,17 @@ body.dark-mode #about-me button:hover {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    /* gap: 20px; */
     width: 100%;
     margin-top: 40px; 
     text-align: center;
 }
 
 .container {
-    /* width: 250px;
-    height: 350px; */
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
     padding: 20px;
-    
     font-family: 'JetBrains Mono', monospace;
     font-weight: lighter;
     line-height: 1.5;
@@ -642,7 +636,7 @@ body.dark-mode #about-me button:hover {
 }
 #container-1 {
     border: 3px solid #df99ad;
-    background: linear-gradient(180deg, rgba(215, 95, 120, 0.5), rgba(136, 73, 116, 0.55));
+    background: linear-gradient(180deg, rgba(215, 95, 120, 0.6), rgba(136, 73, 116, 0.55));
     border-radius: 16px;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), inset 0 0 8px rgba(255, 255, 255, 0.05);
@@ -650,7 +644,7 @@ body.dark-mode #about-me button:hover {
 
 #container-2 {
     border: 3px solid rgba(206, 187, 235, 0.4);
-    background: linear-gradient(180deg, rgba(131, 97, 184, 0.5), rgba(50, 94, 159, 0.55));
+    background: linear-gradient(180deg, rgba(131, 97, 184, 0.6), rgba(50, 94, 159, 0.65));
     border-radius: 16px;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), inset 0 0 8px rgba(255, 255, 255, 0.05);
@@ -658,7 +652,7 @@ body.dark-mode #about-me button:hover {
 
 #container-3 {
     border: 3px solid rgba(223, 177, 250, 0.4);
-    background: linear-gradient(180deg, rgba(155, 96, 188, 0.5), rgba(80, 87, 160, 0.55));
+    background: linear-gradient(180deg, rgba(155, 96, 188, 0.6), rgba(80, 87, 160, 0.65));
     border-radius: 16px;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), inset 0 0 8px rgba(255, 255, 255, 0.05);
@@ -666,7 +660,7 @@ body.dark-mode #about-me button:hover {
 
 #container-4 {
     border: 3px solid rgba(190, 198, 241, 0.4);
-    background: linear-gradient(180deg, rgba(107, 114, 156, 0.5), rgba(37, 102, 144, 0.55));
+    background: linear-gradient(180deg, rgba(107, 114, 156, 0.6), rgba(37, 102, 144, 0.65));
     border-radius: 16px;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), inset 0 0 8px rgba(255, 255, 255, 0.05);
@@ -845,7 +839,8 @@ body.dark-mode .skill {
     min-height: 800px;
     max-height: 2600px;
     color: white;
-    background-color: rgba(200, 181, 236, 0.2);
+    background-color: rgba(126, 138, 205);
+    /* background-color: rgba(200, 181, 236, 0.2); */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px); 
     padding-top: 50px;
@@ -859,7 +854,7 @@ body.dark-mode #project {
     grid-template-columns: 1fr; 
     width: 100%;
     gap: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .grid-item {
     width: 100%;
@@ -898,14 +893,22 @@ body.dark-mode #project {
     align-self: flex-end; 
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #99959f;
+    background-color: #c2bcc8;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
 #contact-form button:hover {
+    background-color: #b9b3be;
+}
+
+body.dark-mode #contact-form button {
+    background-color: #99959f;
+}
+body.dark-mode #contact-form button:hover {
     background-color: #7c7a85;
+   
 }
 .icon-container {
     display: flex;
@@ -933,9 +936,9 @@ body.dark-mode #project {
     height: auto;
 }
 #contact-form{
-    background-color: rgba(110, 105, 128, 0.3);
+    background-color: rgba(210, 198, 238, 0.2);
     /* background-color: rgb(217, 217, 217, 0.14); */
-    border: 1px solid white;
+    border: 2px solid rgba(228, 221, 244, 0.4);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: .10em;
     border-radius: 20px;
@@ -944,6 +947,10 @@ body.dark-mode #project {
     min-width: 300px;
     height: 340px;
     margin-top: 20px;
+}
+body.dark-mode #contact-form{
+    background-color: rgba(110, 105, 128, 0.3);
+    border: 1px solid rgba(228, 221, 244, 0.4);
 }
 #contact-form form {
     display: flex;
@@ -964,6 +971,7 @@ body.dark-mode #project {
 }
 #contact-form input::placeholder,
 #contact-form textarea::placeholder {
+    font-family: 'JetBrains Mono', monospace;;
     color: #838080;
 }
 .input-row {
