@@ -128,7 +128,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
  
  function learnMore() { 
-
   const open = new Audio('assets/audio/overlay-open.mp3');
   const close = new Audio('assets/audio/overlay-close.mp3');
 
@@ -274,25 +273,35 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-document.querySelector("#contact-form form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  const statusMessage = document.createElement("p");
-  statusMessage.style.marginTop = "10px";
-  
-  emailjs.sendForm("service_lvn9l9q", "template_qkqmj79", this)
-    .then(() => {
-      statusMessage.textContent = "✅ Thank you! Your message has been sent. I’ll get back to you soon.";
-      statusMessage.style.color = "green";
-      this.appendChild(statusMessage);
-      this.reset();
-    })
-    .catch((err) => {
-      console.error("❌ Failed:", err);
-      statusMessage.textContent = "❌ Failed to send. Please try again later.";
-      statusMessage.style.color = "red";
-      this.appendChild(statusMessage);
-    });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const statusMessage = document.createElement("p");
+    statusMessage.style.marginTop = "10px";
+
+    emailjs
+      .sendForm("service_lvn9l9q", "template_qkqmj79", this)
+      .then(() => {
+        statusMessage.textContent =
+          "Thank you! Your message has been sent.";
+        statusMessage.style.color = "white";
+        form.appendChild(statusMessage);
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        statusMessage.textContent =
+          "Failed to send. Please try again later.";
+        statusMessage.style.color = "white";
+        form.appendChild(statusMessage);
+      });
+  });
 });
+
 
 
 
