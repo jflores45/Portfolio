@@ -7,6 +7,7 @@ body{
     /* font-size: 20px; */
     margin: 80px 60px 80px 60px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
 }
 body::before {
     content: "";
@@ -45,12 +46,15 @@ h4{
     font-size: small;
     color: #dcd8d8;
 }
-p{
+p {
     font-size: medium;
     font-family: 'JetBrains Mono', monospace;
-    color: #e9e7e7;
+    color: white;
     font-weight: lighter;
     line-height: 1.8;
+}
+p.dark-mode {
+    color: #e9e7e7;
 }
 .circle {
     width: 600px;
@@ -871,6 +875,43 @@ body.dark-mode .skill {
     height: auto;
 }
 /*--------------------- PROJECT -------------------------*/
+
+.view-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    /* background-color: #cba6dc; */
+}
+
+.view-project > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.view-project a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.view-project img {
+    width: 30px;
+    height: 30px;
+}
+
+.view-project h2 {
+    margin: 0;
+}
+
+.view-all {
+    color: #fff;
+    /* margin-top: 40px; */
+    display: flex;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+}
 #project{
     min-height: 800px;
     max-height: 2600px;
@@ -905,17 +946,10 @@ body.dark-mode #project {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.more-skills {
-    color: #fff;
-    margin-top: 40px;
-    text-align: center;
-    font-size: medium;
-    font-family: 'JetBrains Mono', monospace;
-}
 
 /* ---------------------CONTACT ---------------------*/
 .contact {
-    height: 900px;
+    height: 800px;
     /* max-height: 2400px; */
     /* background-color: #9bafe6; */
     color: white;
@@ -928,21 +962,24 @@ body.dark-mode #project {
     align-self: flex-end; 
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #c2bcc8;
+    background-color: #8f95d0;
+    border: 1px solid rgba(239, 237, 244, 0.4);
     color: white;
-    border: none;
     border-radius: 8px;
     cursor: pointer;
 }
 #contact-form button:hover {
-    background-color: #b9b3be;
+    background-color: #8990ce;
+    border: 1px solid rgba(239, 237, 244, 0.4);
 }
 
 body.dark-mode #contact-form button {
-    background-color: #99959f;
+    background-color: rgba(116, 109, 140, 0.6);
+    border: 1px solid rgba(228, 221, 244, 0.4);
 }
 body.dark-mode #contact-form button:hover {
-    background-color: #7c7a85;
+    background-color: rgba(145, 140, 165, 0.6);
+    border: 1px solid rgba(228, 221, 244, 0.4);
 }
 .icon-container {
     display: flex;
@@ -988,10 +1025,12 @@ body.dark-mode #contact-form{
 #contact-form form {
     display: flex;
     flex-direction: column;
+    font-family: 'JetBrains Mono', monospace;;
     gap: 20px;
 }
 #contact-form label {
     font-weight: bold;
+    font-size: medium;
     margin-bottom: 15px;
 }
 #contact-form input,
