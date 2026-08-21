@@ -35,36 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-// function pronounceName() {
-//   const speakerIcon = document.querySelector('.name-pronunce img');
-//   const heading = document.querySelector('.name-pronunce h1');
-
-//   speakerIcon.addEventListener('click', function() {
-//     // Hide the heading instead of removing
-//     heading.style.display = 'none';
-
-//     // Create video wrapper
-//     const videoWrapper = document.createElement('div');
-//     videoWrapper.classList.add('video-wrapper');
-
-//     const video = document.createElement('video');
-//     video.src = 'assets/video/pronunciation.mp4';
-//     video.autoplay = true;
-//     video.muted = true;
-//     video.loop = false;
-
-//     videoWrapper.appendChild(video);
-
-//     // Insert the video wrapper below heading (or wherever you want)
-//     heading.parentNode.insertBefore(videoWrapper, speakerIcon);
-
-//     // When video ends, remove video and show heading again
-//     video.addEventListener('ended', function() {
-//       videoWrapper.remove();
-//       heading.style.display = ''; // restore original display
-//     });
-//   });
-// }
   function pronounceName() {
     const Canvas = document.getElementById('canvas');
     const ctx = Canvas.getContext('2d');
@@ -175,7 +145,7 @@ function playKeyboardSound() {
     const items2 = document.querySelectorAll('.creamy-button');
 
     const audio3 = new Audio('assets/audio/creamy-keyboard-button.mp3');
-    items3 = document.querySelectorAll('.thocky-button');
+    const items3 = document.querySelectorAll('.thocky-button');
 
     const audio4 = new Audio('assets/audio/enter-sound.mp3');
     const items4 = document.querySelectorAll('.enter-sound');
@@ -274,6 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
 
@@ -304,5 +275,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter-button");
+  const projects = document.querySelectorAll(".grid-item");
 
- 
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
+  
+      filterButtons.forEach(btn =>
+        btn.classList.remove("active-filter")
+      );
+  
+      button.classList.add("active-filter");
+  
+      projects.forEach(project => {
+        const categories = project.dataset.category.split(" ");
+    
+        if (filter === "all" || categories.includes(filter)) {
+            project.style.display = "";
+        } else {
+            project.style.display = "none";
+        }
+      });
+    });
+  });
+});

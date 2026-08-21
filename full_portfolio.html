@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/full_port.css">
+    <script src="assets/js/main.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Projects</title>
 </head>
@@ -26,99 +29,275 @@
     <div class="inner">
         <div class="header-shift"> 
             <h1> Projects </h1>
-            <p>Here are some of the projects I have worked on recently. Click on the images to view the projects.</p>
-            <p>Feel free to explore and reach out if you have any questions or feedback!</p>
+            <p>Here are some of the projects I have worked on recently. Feel free to explore and reach out if you have any questions or feedback!</p>
+            <div class="filter_projects">
+                <button class="filter-button active-filter" data-filter="all">All</button>
+                <button class="filter-button" data-filter="design">Design</button>
+                <button class="filter-button" data-filter="frontend">Front-end</button>
+                <button class="filter-button" data-filter="fullstack">Full Stack</button>
+                <button class="filter-button" data-filter="other">Other</button>
+                <!-- <button class="filter-button" data-filter="other">Client Work</button> -->
+            </div>
         </div>
-        <!-- <div class="filter_projects header-shift">
-            <p>Filter by:</p>
-            <button class="filter-button" data-filter="all">All</button>
-            <button class="filter-button" data-filter="web">Front-end</button>
-            <button class="filter-button" data-filter="game">Design</button>
-            <button class="filter-button" data-filter="art">Back-end</button>
-            <button class="filter-button" data-filter="other">Web Development</button>
-            <button class="filter-button" data-filter="other">Other</button>
-        </div> -->
+       
         <!-- Add rotating carasual -->
         <div class="grid-container">
-            <a href="insta-clone.html">
-                <figure>
-                    <img src="assets/images/insta.png" alt="Project 1">
-                    <figcaption>
-                        <h2>Next Level Society</h2>
-                    </figcaption>
-                </figure>
-            </a>
+            <div class="grid-item" data-category="fullstack">
+                <div class="project-pic">
+                    <a href="https://github.com/jflores45/NOVA" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/NOVA_Project.png" alt="Project 3">
+                    </a>
+                </div>
+                
+                <div class="project-details">
+                    <div class="type"><p>Web Application</p></div>
+                    <h3>NOVA | Retail Site</h3>
+                    <h4>July 2026 - Current</h4>
+                    <p> Retail Luxury e-commerce platform combining editorial content, trend discovery, and product browsing.</p>
 
-            <a href="insta-clone.html">
-            <figure>
-                <img src="assets/images/insta.png" alt="Project 1">
-                <figcaption>
-                    <h2>Instagram Clone </h2>
-                </figcaption>
-            </figure>
-            </a>
-            <a href="search-engine.html">
-            <figure>
-                <img src="assets/images/search-engine.png" alt="Project 2">
-                <figcaption>
-                    <!-- <h2>Project 2: Customer Support AI chat bot</h2> -->
-                    <h2>Scalable Search Engine</h2>
-                    <!-- <a href="/personal_website/"></a> -->
-                </figcaption>
-            </figure>
-            </a>
-            <!-- <a href="mopey.html">
-                <figure>
-                    <img src="assets/images/mopey.png" alt="Project 5">
-                    <figcaption>
-                        <h2>Project 3: Mopey</h2>
-                    </figcaption>
-                </figure>
-            </a> -->
-            <a href="https://github.com/jflores45/Code_The_Dream/tree/main">
-                <figure>
-                    <img src="assets/images/starwars_main.png" alt="Project 5">
-                    <figcaption>
-                        <h2>Star Wars Holocron</h2>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="https://github.com/jflores45/dog_fetch/tree/main">
-                <figure>
-                    <img src="assets/images/dog_fetch.png" alt="Project 5">
-                    <figcaption>
-                        <h2>Fetch</h2>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="asteroids.html">
-                <figure>
-                    <img src="assets/images/asteroids.png" alt="Project 3">
-                    <figcaption>
-                        <!-- <h2>Project 3: Chrome Extension</h2> -->
-                        <!-- <a href="/personal_website/"></a> -->
-                        <h2>Asteroids Game! </h2>
-                    </figcaption>
-                </figure>
-                </a>
-        </div> 
-           <!-- <a href="artistry-explore.html">
-            <figure>
-                <img src="assets/images/artist-search.png" alt="Project 4">
-                <figcaption>
-                    <h2>Project 4: Artistry Explore</h2>
-                </figcaption>
-            </figure>
-            </a> -->
+                    <div class="skill-type">
+                        <div class="typs">
+                            <p>React</p>
+                        </div>
+                        <div class="typs">
+                            <p>TypeScript</p>
+                        </div>
+                        <div class="typs">
+                            <p>Node.js</p>
+                        </div>
+                        <div class="typs">
+                            <p>Express</p>
+                        </div>
+                        <div class="typs">
+                            <p>Prisma</p>
+                        </div>
+                         <div class="typs">
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
 
-            <!-- <a href="nullify.html">
-                <figure>
-                    <img src="assets/images/null_logo.png" alt="Project 5">
-                    <figcaption>
-                        <h2>Project 4: Nullify</h2>
-                    </figcaption>
-                </figure>
-            </a> -->
+                    <a href="https://github.com/jflores45/NOVA" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/redirect.png" alt="redirect icon" class="project-accent">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Next Level Society -->
+            <div class="grid-item" data-category="design other">
+                <div class="project-pic">
+                    <a href="https://www.nlschicago.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/nls-portfolio.png" alt="Next Level Society website">
+                    </a>
+                </div>
+
+                <div class="project-details">
+                    <div class="type">
+                        <p>Web Development</p>
+                    </div>
+
+                    <h3>Next Level Society</h3>
+                    <h4>October 2025 - Paused</h4>
+
+                    <p>
+                        Redesigned and migrated a nonprofit website from Google Sites to WordPress,
+                        creating a more accessible and engaging platform for showcasing youth art,
+                        music, and community programs.
+                    </p>
+
+                    <div class="skill-type">
+                        <div class="typs"><p>WordPress</p></div>
+                        <div class="typs"><p>PHP</p></div>
+                        <div class="typs"><p>JavaScript</p></div>
+                        <div class="typs"><p>HTML</p></div>
+                        <div class="typs"><p>CSS</p></div>
+                    </div>
+
+                    <a href="https://www.nlschicago.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/redirect.png" alt="redirect icon" class="project-accent">
+                    </a>
+                    
+                </div>
+            </div>
+
+
+            <!-- Star Wars Holocron -->
+            <div class="grid-item" data-category="frontend">
+                <div class="project-pic">
+                    <a href="https://github.com/jflores45/Code_The_Dream/tree/main" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/starwars_main.png" alt="Star Wars Holocron application">
+                    </a>
+                </div>
+
+                <div class="project-details">
+                    <div class="type">
+                        <p>Web Application</p>
+                    </div>
+
+                    <h3>Star Wars Holocron</h3>
+                    <h4>2026</h4>
+
+                    <p>
+                        Interactive Star Wars character explorer that retrieves and displays
+                        character data through an external API, allowing users to browse and
+                        explore information from the Star Wars universe.
+                    </p>
+
+                    <div class="skill-type">
+                        <div class="typs"><p>JavaScript</p></div>
+                        <div class="typs"><p>React</p></div>
+                        <div class="typs"><p>REST API</p></div>
+                        <div class="typs"><p>HTML</p></div>
+                        <div class="typs"><p>CSS</p></div>
+                    </div>
+
+                    <a href="https://github.com/jflores45/Code_The_Dream/tree/main" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/redirect.png" alt="redirect icon" class="project-accent">
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Fetch -->
+            <div class="grid-item" data-category="frontend">
+                <div class="project-pic">
+                    <a href="https://github.com/jflores45/dog_fetch/tree/main" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/dog_fetch.png" alt="Fetch dog adoption application">
+                    </a>
+                </div>
+
+                <div class="project-details">
+                    <div class="type">
+                        <p>Web Application</p>
+                    </div>
+
+                    <h3>Fetch</h3>
+                    <h4>2026</h4>
+
+                    <p>
+                        Dog adoption search application that uses an external API to help users
+                        browse available dogs, filter results, and explore potential matches
+                        based on their preferences.
+                    </p>
+
+                    <div class="skill-type">
+                        <div class="typs"><p>React</p></div>
+                        <div class="typs"><p>JavaScript</p></div>
+                        <div class="typs"><p>REST API</p></div>
+                        <div class="typs"><p>HTML</p></div>
+                        <div class="typs"><p>CSS</p></div>
+                    </div>
+
+                    <a href="https://github.com/jflores45/dog_fetch/tree/main" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/redirect.png" alt="redirect icon" class="project-accent">
+                    </a>
+                </div>
+            </div>
+
+             <!-- <div class="grid-item">
+                    <h3>Mopey</h3>
+                    <h4>June 8, 2025 - Current</h4>
+                    <p>Mopey is a task-management app built to help people stay focused in a world full of distractions. It blends productivity with mental-health awareness by letting users track tasks, moods, and personal progress, encouraging a healthier, more intentional daily routine.</p>
+                    <a href="asteroids.html">
+                        <img src="assets/images/mopey.png" alt="Project 3">
+                    </a>
+                    <div class="skills_container">
+                        <div class="skill react creamy-sound">
+                            <img src="/Portfolio/assets/images/react.png" alt="react"/>
+                            <p> React </p>
+                        </div>
+                        
+                        <div class="skill flask creamy-sound">
+                            <img src="/Portfolio/assets/images/flask.png" alt="flask"/>
+                            <p> Flask </p>
+                        </div>
+
+                        <div class="skill sqlite creamy-sound">
+                            <img src="/Portfolio/assets/images/sqlite.png" alt="sqlite"/>
+                            <p> SQLite </p>
+                        </div>
+
+                        <div class="skill html creamy-sound">
+                            <img src="/Portfolio/assets/images/html.png" alt="html"/>
+                            <p> HTML </p>
+                        </div>
+                        
+                        <div class="skill css creamy-sound">
+                            <img src="/Portfolio/assets/images/css.png" alt="css"/>
+                            <p> CSS </p>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                <!-- <div class="grid-item">
+                    <h3>Instagram Clone</h3>
+                    <h4>January 24, 2024 - May 2024</h4>
+                    <p>This project is a simplified clone of Instagram, allowing users to sign up, upload photos, follow other users, like posts, and leave comments. The goal was to replicate the core features of Instagram using modern web technologies.</p>
+                    <a href="insta-clone.html">
+                        <img src="/assets/images/insta.png" alt="Project 1">
+                    </a>
+                    <div class="skills_container">
+                        <div class="skill react creamy-sound">
+                            <img src="/assets/images/react.png" alt="react"/>
+                            <p> React </p>
+                        </div>
+                        
+                        <div class="skill flask creamy-sound">
+                            <img src="/assets/images/flask.png" alt="flask"/>
+                            <p> Flask </p>
+                        </div>
+
+                        <div class="skill sqlite creamy-sound">
+                            <img src="/assets/images/sqlite.png" alt="sqlite"/>
+                            <p> SQLite </p>
+                        </div>
+
+                        <div class="skill html creamy-sound">
+                            <img src="/assets/images/html.png" alt="html"/>
+                            <p> HTML </p>
+                        </div>
+
+                        <div class="skill css creamy-sound">
+                            <img src="/assets/images/css.png" alt="css"/>
+                            <p> CSS </p>
+                        </div>
+                    </div>
+                </div> -->
+
+            <!-- Asteroids -->
+            <div class="grid-item" data-category="fullstack">
+                <div class="project-pic">
+                    <a href="asteroids.html" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/asteroids.png" alt="Asteroids game">
+                    </a>
+                </div>
+
+                <div class="project-details">
+                    <div class="type">
+                        <p>Game Development</p>
+                    </div>
+
+                    <h3>Asteroids</h3>
+                    <h4>2025</h4>
+
+                    <p>
+                        Browser-based arcade game inspired by the classic Asteroids, featuring
+                        player movement, projectile mechanics, collision detection, and
+                        progressively challenging gameplay.
+                    </p>
+
+                    <div class="skill-type">
+                        <div class="typs"><p>JavaScript</p></div>
+                        <div class="typs"><p>HTML</p></div>
+                        <div class="typs"><p>CSS</p></div>
+                    </div>
+
+                    <a href="https://github.com/jflores45/dog_fetch/tree/main" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/redirect.png" alt="redirect icon" class="project-accent">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

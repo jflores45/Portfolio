@@ -1,5 +1,6 @@
 body{
-    background-image: linear-gradient(180deg, rgb(173, 198, 244, 1), rgb(150, 141, 211, 1));
+    /* background-color: rgb(22, 27, 65, 0.8); */
+    background-image: linear-gradient(135deg, rgb(195, 101, 138, 1), rgb(133, 97, 155, 1));
     /* background-image: linear-gradient(180deg, rgba(224, 236, 251, 0.6), rgba(181, 196, 215, 0.6), rgba(134, 160, 192, 0.6), rgba(117, 145, 179, 0.8)); */
     /* font-size: 20px; */
     margin: 80px 60px 80px 60px;
@@ -7,75 +8,137 @@ body{
     color: white;
     font-family: 'JetBrains Mono', monospace;
 }
- h1, h2, h3{
+ h1, h2, h3 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: .10em;
-    font-weight: 400;
+    font-weight: 750;
 }
-.inner{
-    background-color: rgba(47, 56, 121, 0.4);
-    border: 2px solid #B0A6DC;
+.inner {
+    background-color: rgb(22, 27, 65, 0.8);
+    /* border: 2px solid #B0A6DC; */
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.25), 
                 0 0 10px rgba(255, 255, 255, 0.4 ), 
-                0 0 15px rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    padding: 50px 0px 50px 0px;
+                0 0 15px rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    /* padding: 50px 0px 50px 0px; */
 }
-.header-shift{
-    padding: 40px 0px 10px 150px;
+.header-shift {
+    padding: 40px 0px 20px 70px;
 }
-.header-shift p{
-    font-size: large;
+.header-shift p {
+    /* font-size: large; */
     font-weight: lighter;
     color: #e9e7e7;
     width: 90%;
 }
 
 /*             PROJECT SECTION         */
-
 .grid-container {
     display: grid;
-    /* margin: 20px; */
-    padding-left: 120px;
-    grid-template-columns: repeat(1fr); /* Create two equal-width columns */
+    grid-template-columns: 1fr;
+    width: 80%;
+    gap: 40px;
+    justify-items: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
-
-figure img {
-    width: 90%;      
-    height: auto;  
+.grid-item {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 40px;
+    width: 100%;
+    background-color: #353154;
+    border: 1px solid #A998CD;
+    border-radius: 10px;
+    /* margin-bottom: 20px; */
+    padding: 60px;
+}
+.grid-item img {
+    width: 100%;       
+    height: auto;      
+    border-radius: 5px;
     object-fit: cover;
     display: block;
-    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-a{
-    text-decoration: none;
+.project-details {
+    position: relative;
 }
-figcaption h2 {
-    text-decoration: none;
-    font-size: 24px;
+
+.project-accent {
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    width: 30px !important;
+    height: autot;
+    pointer-events:fill;
+    cursor: pointer;
+}
+
+.project-details {
+    grid: 40%
+    
+}
+.type {
+    display: inline-block;
+    background-color: #515173;
+    border-radius: 20px;
+    padding: 4px 12px;
+}
+
+.type p {
     margin: 0;
-    padding: 10px;
-    color: white;
-    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+.skill-type {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.typs {
+    background-color: rgba(210, 198, 238, 0.2);
+    border: 1px solid rgba(228, 221, 244, 0.4);
+    border-radius: 999px;
+    padding: 4px 10px;
+    width: fit-content;
+}
+
+.typs p {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1;
 }
 
 .filter-button {
     font-family: 'JetBrains Mono', monospace;
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     border-radius: 50px;
-    border: solid 1px rgb(189, 185, 185);
+    border: 1px solid rgb(189, 185, 185);
     background-color: rgba(210, 198, 238, 0.2);
     color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
 .filter-button:hover {
-    transform: translateY(-4px);
-    transition: background-color 0.3s ease; 
-    background-color: rgba(136, 129, 153, 0.4);
-    border: solid 1px rgb(206, 190, 190);
-    cursor: pointer; 
+    background-color: rgba(103, 87, 141, 0.8);
+    border-color: rgb(206, 190, 190);
+}
+
+.filter-button.active-filter {
+    background-color: rgba(98, 81, 139, 0.8);
+    /* background-color: rgba(210, 198, 238, 0.65); */
+    border: 1.5px solid rgb(238, 233, 250);
+    color: #ffffff;
+    box-shadow: 
+        0 0 10px rgba(210, 198, 238, 0.35),
+        inset 0 1px 2px rgba(255, 255, 255, 0.25);
 }
 body.dark-mode .filter-button:hover {
     background-color: rgba(110, 105, 128, 0.3);
