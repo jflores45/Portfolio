@@ -13,6 +13,12 @@ body{
     letter-spacing: .10em;
     font-weight: 750;
 }
+h4{
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: lighter;
+    font-size: small;
+    color: #dcd8d8;
+}
 .inner {
     background-color: rgb(22, 27, 65, 0.8);
     /* border: 2px solid #B0A6DC; */

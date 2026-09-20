@@ -946,11 +946,15 @@ body.dark-mode #project {
     grid-template-columns: 60% 40%;
     gap: 40px;
     width: 100%;
-    background-color: #353154;
+    /* background-color: #353154; */
+    background-color: rgba(210, 198, 238, 0.2);
     border: 1px solid #A998CD;
     border-radius: 10px;
     /* margin-bottom: 20px; */
     padding: 60px;
+}
+body.dark-mode .grid-item {
+    background-color: #353154;
 }
 .grid-item img {
     width: 100%;       
@@ -980,9 +984,13 @@ body.dark-mode #project {
 }
 .type {
     display: inline-block;
-    background-color: #515173;
+    background-color: rgba(210, 198, 238, 0.4);
+    /* background-image: linear-gradient(180deg, #9bafe6, rgba(176, 141, 240, 0.55)); */
     border-radius: 20px;
     padding: 4px 12px;
+}
+body.dark-mode .type {
+    background-color: #515173;
 }
 
 .type p {
@@ -1021,26 +1029,29 @@ body.dark-mode #project {
     align-items: center; 
 }
 #contact-form button {
+    width: 150px;
+    height: 50px;
     align-self: flex-end; 
+    font-size: medium;
+    border-radius: 10px;
     padding: 12px 24px;
-    font-size: 16px;
-    background-color: #8f95d0;
+    background-color: rgb(143, 149, 208);
     border: 1px solid rgba(239, 237, 244, 0.4);
     color: white;
     border-radius: 8px;
     cursor: pointer;
 }
 #contact-form button:hover {
-    background-color: #5e6bcb;
+    background-color: rgb(147, 153, 215);
     border: 1px solid rgba(239, 237, 244, 0.4);
 }
 
 body.dark-mode #contact-form button {
-    background-color: rgba(98, 81, 139, 0.8);
+    background-color: rgba(103, 87, 141, 0.8);
     border: 1px solid rgba(213, 199, 246, 0.4);
 }
 body.dark-mode #contact-form button:hover {
-    background-color: rgba(103, 87, 141, 0.8);
+    background-color: rgba(103, 87, 141, 0.6);
     border: 1px solid rgba(213, 199, 246, 0.4);
 }
 .icon-container {
@@ -1122,22 +1133,12 @@ body.dark-mode #contact-form {
     flex: 1;
     min-width: 250px;
 }
-.contact button {
-    width: 150px;
-    height: 50px;
-    font-size: medium;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    border: none;
-    cursor: pointer;
-}
 .hoover-g {
     transition: all 0.3s ease;
 }
 
 .hoover-g:hover {
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)); /* Glow effect */
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)); 
     transform: scale(1.05);
 }
 
@@ -1160,8 +1161,6 @@ body.dark-mode #contact-form {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    /* background-color: rgba(215, 95, 120, 0.12); */
-    /* border: 1px solid rgba(215, 95, 120, 0.45); */
     border-radius: 20px;
     padding: 6px 12px;
     width: fit-content;
